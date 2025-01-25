@@ -1,12 +1,12 @@
 # MyCarDriver  
 
-##Installation  
+## Installation  
 
-Install [pip](https://pypi.org/project/pip/)  
+Install [Pip](https://pypi.org/project/pip/)  
 
-[pip logo](https://pypi.org/static/images/logo-large.9f732b5f.svg)  
+![Pip Logo](https://pypi.org/static/images/logo-large.9f732b5f.svg)  
 
-##Developers  
+## Developers  
 
 Manager: **Tyson Charles**  
 
