@@ -15,6 +15,8 @@ Brenden Matteson - Good at (HTML, JS, CSS, C), multiple website experience, Know
 
 Makaela Crookes - Good at (CSS, HTML, C) know decent amount of js and python  
 
+Tyson Charles - Good at (CSS,HTML,JS,C),knows a decent amount of JS and C
+
 
 ## Roles:  
 Brenden Mateson - Manager  
