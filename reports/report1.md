@@ -1,12 +1,12 @@
 # Report for Week #1
 
-Student Financial
-Group: 11
-Date: 1/26/2025
-Location: Discord
-Present participants: Makaela, Jered, Brenden
-Missing participants: Tyson
-Project repo: https://github.com/brenden-matteson/cs386
+Student Financial  
+Group: 11  
+Date: 1/26/2025  
+Location: Discord  
+Present participants: Makaela, Jered, Brenden  
+Missing participants: Tyson  
+Project repo: https://github.com/brenden-matteson/cs386  
 
 Talent Inventory:
 Jered Angous- Good at (C,HTML,CSS) – Know decent amount of (Python, Matlab, Java, C++)
