@@ -24,12 +24,13 @@ We will rotate in this order (Manager->Quality Assurance->Reporter->Presenter)
 We will do this 4 times so that everyone has a chance and then we will vote on who will take on the role for the rest of the semester.
 
 ## Meeting Schedule:
-	Thursdays 3:00-4:00pm or 3:00-3:30pm depending on what is needed to be discussed.
+Thursdays 3:00-4:00pm or 3:00-3:30pm depending on what is needed to be discussed.
 
-## Communication Plan:
-	We will be using Discord to communicate with each other about project ideas and issues. We will be making decisions by ¾ majority because we only have 4 members. If we are behind or need help with whatever is assigned to us, we must reach out to our other members in advance so that the project can try to stay on track.
+## Communication Plan: 
+We will be using Discord to communicate with each other about project ideas and issues. We will be making decisions by ¾ majority because we only have 4 members. If we are behind or need help with whatever is assigned to us, we must reach out to our other members in advance so that the project can try to stay on track. 
 
 ## Project Idea:
+We will be using HTML, JS, and CSS to create a website. We will be using GitHub as our version control system. We want to make a web application focused on college students and their finances. We want to create a service that can help them make a weekly/monthly budget and help them calculate potential repayment plans. 
 
 
 ## Next Steps:
