@@ -4,21 +4,21 @@ Student Financial
 Group: 11  
 Date: 1/26/2025  
 Location: Discord  
-Present participants: Makaela, Jered, Brenden  
-Missing participants: Tyson  
+Present participants: Makaela, Jered, Brenden, Tyson   
+Missing participants: N/A  
 Project repo: https://github.com/brenden-matteson/cs386  
 
-Talent Inventory:
-Jered Angous- Good at (C,HTML,CSS) – Know decent amount of (Python, Matlab, Java, C++)
-Brenden Matteson - Good at (HTML, JS, CSS, C), multiple website experience, Know some Java
-Makaela Crookes - Good at (CSS, HTML, C) know decent amount of js and python
+## Talent Inventory:  
+Jered Angous- Good at (C,HTML,CSS) – Know decent amount of (Python, Matlab, Java, C++)  
+Brenden Matteson - Good at (HTML, JS, CSS, C), multiple website experience, Know some Java  
+Makaela Crookes - Good at (CSS, HTML, C) know decent amount of js and python  
 
 
-Roles:
-Brenden Mateson - Manager
-Jered Angous - Quality Assurance
-Makaela Crookes - Reporter
-Tyson Charles - Presenter
+## Roles:  
+Brenden Mateson - Manager  
+Jered Angous - Quality Assurance  
+Makaela Crookes - Reporter  
+Tyson Charles - Presenter  
 
 We will rotate in this order (Manager->Quality Assurance->Reporter->Presenter)
 We will do this 4 times so that everyone has a chance and then we will vote on who will take on the role for the rest of the semester.
