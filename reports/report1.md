@@ -9,8 +9,10 @@ Missing participants: N/A
 Project repo: https://github.com/brenden-matteson/cs386  
 
 ## Talent Inventory:  
-Jered Angous- Good at (C,HTML,CSS) – Know decent amount of (Python, Matlab, Java, C++)  
+Jered Angous- Good at (C,HTML,CSS) – Know decent amount of (Python, Matlab, Java, C++) 
+
 Brenden Matteson - Good at (HTML, JS, CSS, C), multiple website experience, Know some Java  
+
 Makaela Crookes - Good at (CSS, HTML, C) know decent amount of js and python  
 
 
@@ -35,13 +37,13 @@ We will be using HTML, JS, and CSS to create a website. We will be using GitHub 
 
 ## Next Steps:
 Think about what needs to be done and assign tasks. Update your activity management system with new tasks, actual hours spent in the activities, and corresponding GitHub issues.  Summarize these tasks here.  
-Makaela:  
+**Makaela:**  
 Improve website design to better fit website goals  
-Jered:  
+**Jered:**  
 Create a logo and and the about us page
-Brenden:  
+**Brenden:**  
 Work on the home page back end, working as an advertisement for features as well as a secondary navigation page.   
-Tyson:  
+**Tyson:**  
 Work on the back end js script such as taking in values from the input fields and then start putting together equations to estimate values given or what the user would want to know
 
 
