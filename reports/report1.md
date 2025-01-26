@@ -42,5 +42,6 @@ Create a logo and and the about us page
 Brenden:  
 Work on the home page back end, working as an advertisement for features as well as a secondary navigation page.  
 Tyson: 
+Work on the back end js script such as taking in values from the input fields and then start putting together equations to estimate values given or what the user would want to know
 
 
