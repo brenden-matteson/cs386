@@ -38,7 +38,7 @@ Think about what needs to be done and assign tasks. Update your activity managem
 Makaela:  
 Improve website design to better fit website goals  
 Jered:  
-Create a logo and  
+Create a logo and and the about us page
 Brenden:  
 Work on the home page back end, working as an advertisement for features as well as a secondary navigation page.  
 Tyson: 
