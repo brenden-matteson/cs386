@@ -29,8 +29,11 @@ GitHub Summary: No activity.
 
 ## 2. Retrospective
 Appreciations: Everyone was responsible and got their interviews done.
+
 Successes: came up with good interview questions, completed interviews, everyone made it to the meeting
+
 Failures: 
+
 Barriers: 
 What we should try next time: continue meeting in person and staying on top of our deliverables.
 
