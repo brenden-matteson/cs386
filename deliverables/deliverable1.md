@@ -83,7 +83,7 @@ Young college students, ages 18-24, with low disposable incomes, who want an eas
 
 **Who was interviewed and who participated in the interview:**
 
-  * The interviewer is Jered and the person who was interviewed was Emma Parson
+  * The interviewer is Makaela and the person who was interviewed was Emma Parson
 
 **When:**
 
@@ -116,7 +116,7 @@ Young college students, ages 18-24, with low disposable incomes, who want an eas
 
 **Who was interviewed and who participated in the interview:**
 
-  * The interviewer is Jered and the person who was interviewed was Aitor Campos
+  * The interviewer is Makaela and the person who was interviewed was Aitor Campos
 
 **When:**
 
