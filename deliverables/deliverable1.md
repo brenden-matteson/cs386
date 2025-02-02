@@ -87,7 +87,7 @@ Young college students, ages 18-24, with low disposable incomes, who want an eas
 
 **When:**
 
-  * 1/30/2025
+  * Jan 30, 2025
 
 **Customer segment:**
 
@@ -120,7 +120,7 @@ Young college students, ages 18-24, with low disposable incomes, who want an eas
 
 **When:**
 
-  * 1/30/2025
+  * Jan 30, 2025
 
 **Customer segment:**
 
@@ -153,7 +153,7 @@ Young college students, ages 18-24, with low disposable incomes, who want an eas
 
 **When:**
 
-  * 9:35 PM 1/31/25
+  * Jan 31, 2025
 
 **Customer Segment:** 
 
@@ -186,7 +186,7 @@ Young college students, ages 18-24, with low disposable incomes, who want an eas
 
 **When:**
 
-  * 11:14 PM 1/31/25
+  * Jan 31, 2025
 
 **Customer Segment:**
 
@@ -220,7 +220,7 @@ Young college students, ages 18-24, with low disposable incomes, who want an eas
 
 **When:**
 
-  * 2:13 PM 2/1/25
+  * Feb 1, 2025
 
 **Customer Segment:**
 
@@ -248,17 +248,13 @@ Young college students, ages 18-24, with low disposable incomes, who want an eas
 
 ### Interview #8 (Tyson)
 
-**Interviewee:**
-
- * Bradley Pinto
-
 **Who was interviewed and who participated in the interview:**
 
  * The interviewer is Tyson Charles and the person who was interviewed was Bradley Pinto
 
 **When:**
 
- * 2:00PM 1/26/25
+ * Jan 26, 2025
 
 **Customer Segment:**
 
@@ -293,7 +289,7 @@ Young college students, ages 18-24, with low disposable incomes, who want an eas
 
 **When:**
 
- * 3:00PM 1/26/25
+ * Jan 26, 2025
 
 **Customer Segment:**
 
