@@ -256,6 +256,86 @@ Year: senior
 
   * Must Have
 
+### Interview #8
+
+**Interviewee:**
+
+ * Bradley Pinto
+
+**Interviewer:**
+
+ * Tyson Charles
+
+**When:**
+
+ * 2:00PM 1/26/25
+
+**Customer Segment:**
+
+ * 19 years old
+ * male
+ * located in Flagstaff, AZ
+ * full-time college student
+ * 2nd year college student
+ * part time worker at Sam’s Club and Home Goods
+ * Northern Arizona University student
+
+**Key Insights from the Interview:**
+
+ * He doesn’t use any tools to help him manage his money, really doesn’t budget as he pays only for rent and doesn’t know how much he should reasonably spend for groceries.
+ * Get’s paid every week and after rent he end up with about 2000 grand or less to spend. 
+
+**Representative Quotes:**
+
+ * "Too lazy to go grocery shopping and don’t know how much I should spend for groceries."
+ * "I would like to keep track of the amount’sI could spend for essentials"
+ * "I sports bet and earn quite a bit of money from that sometimes so I would like to see that calculated into my budget I’d make "
+
+**Assessment:**
+
+ * Nice to have. Doesn’t really budget and spends money mostly on personal expenses. Would like to find a simple to use budget app to figure out what he should reasonably spend..
+
+### Interview #9
+
+**Interviewee:**
+
+ * Soma Freeman
+
+**Interviewer:**
+
+ * Tyson Charles
+
+**When:**
+
+ * 3:00PM 1/26/25
+
+**Customer Segment:**
+
+ * 22 years old
+ * female
+ * located in Cameron AZ
+ * full-time college student
+ * graduate college student
+ * part time worker at trading post
+ * Northern Arizona University student.
+
+**Key Insights from the Interview:**
+
+ * She uses a 20 percent system for her checks and so she take 20% out to spend till her next check and the rest is put into her savings.
+ * She gets paid biweekly so she has 20% of her pay check to last her for two weeks.
+ * Expenses she’d like to track are gas and personal expenses.
+   
+**Representative Quotes:**
+
+ * "I don’t try to spend much but what really costs a lot is gas and I don’t really keep track how much I spend on it ." 
+ * "I would like to keep track of the amount I spend on personal expenses as well as budget for personal expenses such as going to concerts or trips"
+ * "I try using an app called IAV for banking but haven’t thought of budgeting apps "
+
+**Assessment:**
+
+ * Great to have. Financially responsible and tries to budget well. Mainly focused on keeping track of personal expenses and would like to know how to budget for upcoming events she wants to attend while also being able  to have money to make it through the month. Would like to keep track of personal expenses and attain advice to help save for planned events. 
+
+
 ## Final value proposition and consumer segments
 
 
