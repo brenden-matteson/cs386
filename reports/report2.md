@@ -47,6 +47,7 @@ What we should try next time: continue meeting in person and staying on top of o
 
 ## 3. Next steps
 Think about what needs to be done and assign tasks. Update your activity management system with new tasks, actual hours spent in the activities, and corresponding GitHub issues.  Summarize these tasks here.
+
 Brenden:
 Home page framework (no css yet, just containers and layout)
 
