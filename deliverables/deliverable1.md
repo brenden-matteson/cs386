@@ -2,11 +2,13 @@
 
 ## Introduction
 
-Our project is focused on creating a website that's designed to help college students effectively track and manage their finances. This solution is crucial for college students since it's their first step into adulthood and they need help managing their income and spending.
+Our project is focused on creating a website that's designed to help college students effectively track and manage their finances. This solution is crucial for college students since it's their first step into adulthood and they need help managing their income and spending. Our project is focused on creating a website that's designed to help college students effectively track and manage their finances. We, as college students, know that managing money can be overwhelming, especially for students who are balancing their limited income with essential expenses. Our solution is to provide the guidance they need to build good financial habits. This, in turn, will reduce stress and set them up for long-term success. This solution is crucial for college students since it's their first step into adulthood, and they need help managing their income and spending.
 
 ## Initial value proposition and customer segments
 
-We help college students manage their money through our intuitive budgeting and expense-tracking website that make money management simple, smart, and responsible.
+We help college students manage their money through our intuitive budgeting and expensetracking website that make money management simple, smart, and responsible.
+
+Young college students, ages 18-24, with low disposable incomes, who want an easy way to track how much they are spending, pay for life's essentials, and save.
 
 ## Interviews summary
 
@@ -14,22 +16,20 @@ We help college students manage their money through our intuitive budgeting and 
 
 **Who was interviewed and who participated in the interview:**
 
-  * The interviewer is Jered and the person who was interviewed was Jeysen
+* The interviewer is Jered and the person who was interviewed was Jeysen
 
 **When:**
 
-  * January 30, 2025.
+* January 30, 2025.
 
 **Customer Segment:**
 
-  * Age: 22
-  * Gender: Male
-  * Income: Likely middle income 
-  * Lifestyle: Practical, focused on necessities and avoiding financial mismanagement 
-  * Interests: Financial management tools, budget tracking.
-  * Purchase Frequency: Moderate (no tracking but checks necessities regularly).
-  * Price Sensitivity: Moderate (concerned with necessity but not tracking details).
-  * Year: Recently Graduated
+* Age: 22
+* Gender: Male
+* Income: Likely middle income
+* Price Sensitivity: Moderate (concerned with necessity but not tracking details).
+* Year: Recently Graduated
+* Full-time Student: No
 
 **Key Insights from the Interview:**
 
@@ -45,7 +45,7 @@ We help college students manage their money through our intuitive budgeting and 
 
   * Nice to have: They are interested in tracking earnings and spending, but they don’t currently use any financial tools, meaning it’s not an urgent need.
 
-### Interview #2(Jered)
+### Interview #2 (Jered)
 
 **Who was interviewed and who participated in the interview:**
 
@@ -61,8 +61,6 @@ We help college students manage their money through our intuitive budgeting and 
   * Gender: Male
   * Income: Unsure but likely middle-income.
   * Lifestyle: Practical, focus on managing finances through existing methods but looking for other methods.
-  * Interests: Financial management, subscription services.
-  * Purchase Frequency: Non-necessities are tracked in terms of willingness to spend; gas prices are a significant consideration in expenses.
   * Price Sensitivity: Highly sensitive to costs like gas prices and subscriptions.
   * Year: 3rd year
   * Full-time Student: Yes
@@ -85,11 +83,11 @@ We help college students manage their money through our intuitive budgeting and 
 
 **Who was interviewed and who participated in the interview:**
 
-  * Emma Parson
+  * The interviewer is Jered and the person who was interviewed was Emma Parson
 
 **When:**
 
-  * 1/30/2025
+  * Jan 30, 2025
 
 **Customer segment:**
 
@@ -98,8 +96,8 @@ We help college students manage their money through our intuitive budgeting and 
   * Income: low income
   * Purchase frequency: low
   * Price sensitivity: high
-
-Year: senior
+  * Year: 4th
+  * Full -time Student: Yes
 
 **Key insights from the interview:**
 
@@ -118,11 +116,11 @@ Year: senior
 
 **Who was interviewed and who participated in the interview:**
 
-  * Aitor Campos
+  * The interviewer is Jered and the person who was interviewed was Aitor Campos
 
 **When:**
 
-  * 1/30/2025
+  * Jan 30, 2025
 
 **Customer segment:**
 
@@ -132,6 +130,7 @@ Year: senior
   * Purchase frequency: medium
   * Price sensitivity: low
   * Year: junior
+  * Full-time Student: Yes
 
 **Key insights from the interview:**
 
@@ -146,28 +145,25 @@ Year: senior
 
   * Nice to have: Does not currently use any means of tracking budget, but is looking for something easy and intuitive to use so that he can.
 
-### Interview #5
+### Interview #5 (Brenden)
 
-**Interviewee:**
+**Who was interviewed and who participated in the interview:**
 
-  * Aedan Howell
-
-**Interviewer:**
-
-  * Brenden Matteson
+  * The interviewer is Brenden and the person who was interviewed was Aedan Howell
 
 **When:**
 
-  * 9:35 PM 1/31/25
+  * Jan 31, 2025
 
 **Customer Segment:** 
 
-  * 20 years old
-  * male
-  * located in Flagstaff, AZ
-  * part-time college student
-  * 3rd year college student
-  * Coconino Community College student. 
+  * Age: 20
+  * Gender: Male
+  * Income: Middle-Income
+  * Purchase frequency: Medium
+  * Price sensitivity: Low
+  * Year: 3rd
+  * Full -time Student: Yes
 
 **Key Insights from the Interview:**
 
@@ -184,26 +180,23 @@ Year: senior
 
 ### Interview #6
 
-**Interviewee:**
+**Who was interviewed and who participated in the interview:**
 
-  * Joey Salerno
-
-**Interviewer:**
-
-  * Brenden Matteson
+  * The interviewer is Brenden and the person who was interviewed was Joey Salerno.
 
 **When:**
 
-  * 11:14 PM 1/31/25
+  * Jan 31, 2025
 
 **Customer Segment:**
 
-  * 19 years old
-  * male
-  * located in Flagstaff, AZ
-  * full-time college student
-  * 2nd year college student
-  * Coconino Community College student.
+  * Age: 19
+  * Gender: Male
+  * Income: Middle Income
+  * Purchase frequency: Low
+  * Price sensitivity: High
+  * Year: 2nd
+  * Full-time Student: No
 
 **Key Insights from the Interview:**
 
@@ -221,26 +214,23 @@ Year: senior
 
 ### Interview #7
 
-**Interviewee:**
+**Who was interviewed and who participated in the interview:**
 
-  * Ava Sabo
-
-**Interviewer:**
-
-  * Brenden Matteson
+  * The interviewer is Brenden and the person who was interviewed was Ava Sabo
 
 **When:**
 
-  * 2:13 PM 2/1/25
+  * Feb 1, 2025
 
 **Customer Segment:**
 
-  * 19 years old
-  * female
-  * located in Flagstaff, AZ
-  * full-time college student
-  * 2nd year college student
-  * Northern Arizona University student
+  * Age: 19
+  * Gender: Female
+  * Income: Middle Income
+  * Purchase frequency: High
+  * Price sensitivity: Low
+  * Year: 2nd
+  * Full-time Student: Yes
 
 **Key Insights from the Interview:**
 
@@ -256,29 +246,25 @@ Year: senior
 
   * Must Have
 
-### Interview #8
+### Interview #8 (Tyson)
 
-**Interviewee:**
+**Who was interviewed and who participated in the interview:**
 
- * Bradley Pinto
-
-**Interviewer:**
-
- * Tyson Charles
+ * The interviewer is Tyson Charles and the person who was interviewed was Bradley Pinto
 
 **When:**
 
- * 2:00PM 1/26/25
+ * Jan 26, 2025
 
 **Customer Segment:**
 
- * 19 years old
- * male
- * located in Flagstaff, AZ
- * full-time college student
- * 2nd year college student
- * part time worker at Sam’s Club and Home Goods
- * Northern Arizona University student
+ * Age: 19
+ * Gender: Male
+ * Income: Middle Income
+ * Purchase frequency: Medium
+ * Price sensitivity: Low
+ * Year: 2nd
+ *  Full-time Student: Yes
 
 **Key Insights from the Interview:**
 
@@ -295,29 +281,25 @@ Year: senior
 
  * Nice to have. Doesn’t really budget and spends money mostly on personal expenses. Would like to find a simple to use budget app to figure out what he should reasonably spend..
 
-### Interview #9
+### Interview #9 (Tyson)
 
-**Interviewee:**
+**Who was interviewed and who participated in the interview:**
 
- * Soma Freeman
-
-**Interviewer:**
-
- * Tyson Charles
+ * The interviewer is Tyson Charles and the person who was interviewed was Soma Freeman
 
 **When:**
 
- * 3:00PM 1/26/25
+ * Jan 26, 2025
 
 **Customer Segment:**
 
- * 22 years old
- * female
- * located in Cameron AZ
- * full-time college student
- * graduate college student
- * part time worker at trading post
- * Northern Arizona University student.
+ * Age: 22
+ * Gender: Female
+ * Income: Middle Income
+ * Purchase frequency: Medium
+ * Price sensitivity: Low
+ * Year: 4+
+ * Full -time Student: Yes
 
 **Key Insights from the Interview:**
 
@@ -339,6 +321,8 @@ Year: senior
 ## Final value proposition and consumer segments
 
 We help young adults manage their finances with ease by providing a simple, intuitive budgeting platform that tracks spending and helps them stay on top of their financial goals.
+
+Young Adults (ages 18-24), primarily those with moderate to low incomes, who want to take control of their finances by tracking their spending, managing essentials, and setting financial goals. They seek a simple, intuitive tool to help them stay on track with their budgets and reduce financial stress.
 
 
 
