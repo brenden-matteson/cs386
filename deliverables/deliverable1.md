@@ -338,5 +338,7 @@ Year: senior
 
 ## Final value proposition and consumer segments
 
+We help young adults manage their finances with ease by providing a simple, intuitive budgeting platform that tracks spending and helps them stay on top of their financial goals.
+
 
 
