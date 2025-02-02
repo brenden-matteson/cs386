@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Our project is focused on creating a website that's designed to help college students effectively track and manage their finances. This solution is crucial for college students since it's their first step into adulthood and they need help managing their income and spending. Our project is focused on creating a website that's designed to help college students effectively track and manage their finances. We, as college students, know that managing money can be overwhelming, especially for students who are balancing their limited income with essential expenses. Our solution is to provide the guidance they need to build good financial habits. This, in turn, will reduce stress and set them up for long-term success. This solution is crucial for college students since it's their first step into adulthood, and they need help managing their income and spending.
+Our project is focused on creating a website that's designed to help college students effectively track and manage their finances. We, as college students, know that managing money can be overwhelming, especially for students who are balancing their limited income with essential expenses. Our solution is to provide the guidance they need to build good financial habits. This, in turn, will reduce stress and set them up for long-term success. This solution is crucial for college students since it's their first step into adulthood, and they need help managing their income and spending.
 
 ## Initial value proposition and customer segments
 
