@@ -18,7 +18,6 @@ h2 {
 }
 
 li {
-    font-size: 30px;
     padding: 10px;
 }
 
@@ -93,7 +92,7 @@ li {
 
 .how-list {
     display: flex;
-    font-size: 40px;
+    font-size: 25px;
     flex-direction: row;
     max-width: 800px;
 }
