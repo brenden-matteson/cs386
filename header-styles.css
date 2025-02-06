@@ -63,8 +63,8 @@ img.header-logo {
 
 .nav-line {
     display: flex;
-    height: 5px;
-    border-top: 5px solid #4da9bb;
+    height: 10px;
+    border-top: 10px solid #4da9bb;
     width: 60px;
 }
 
