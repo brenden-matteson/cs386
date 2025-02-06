@@ -38,6 +38,8 @@ button:focus {
 .header-object {
     display: flex;
     padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .header-object > h1 {
@@ -49,7 +51,7 @@ img.phone-icon {
 }
 
 img.header-logo {
-    height: 40px;
+    height: 120px;
 }
 
 .nav-img {
@@ -61,9 +63,9 @@ img.header-logo {
 
 .nav-line {
     display: flex;
-    height: 7px;
-    border-top: 7px solid #4da9bb;
-    width: 40px;
+    height: 5px;
+    border-top: 5px solid #4da9bb;
+    width: 60px;
 }
 
 #nav-content {
