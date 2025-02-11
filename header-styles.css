@@ -1,0 +1,154 @@
+body {
+    font-family: Helvetica;
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1),0 2px 10px 0 rgba(0,0,0,0.08);
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header button {
+    border: none;
+    background-color: transparent;
+}
+
+button:focus {
+    border: none;
+    outline: none;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #F4F4F4;
+    color: #4da9bb;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-object {
+    display: flex;
+    padding: 5px;
+}
+
+.header-object > h1 {
+    margin: 0;
+}
+
+img.phone-icon {
+    height: 40px;
+}
+
+img.header-logo {
+    height: 120px;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: all linear 0.5s;
+}
+
+.nav-button {
+    transition: all linear 0.5s;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.nav-img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-line {
+    display: flex;
+    height: 10px;
+    border-top: 10px solid #4da9bb;
+    width: 60px;
+}
+
+#nav-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #F4F4F4;
+}
+
+.nav-link {
+    display: flex;
+    font-family: Calibri;
+    border-bottom: 1px solid #4da9bb;
+    padding-left: 10px;
+    transition-duration: 0.2s;
+}
+
+.nav-link:hover {
+    background-color: #4da9bb;
+}
+
+.home-picture > img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.title-header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: -150px;
+}
+
+.title-header-object {
+    font-size: 40px;
+    background-color: #4da9bb;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-shadow: 1px 1px 1px white;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .header-object > h1 {
+        font-size: 25px;
+    }
+
+    .nav-line {
+        display: flex;
+        height: 5px;
+        border-top: 5px solid #4da9bb;
+        width: 30px;
+    }
+
+    .home-picture > img {
+        height: 300px;
+    }
+
+    .title-header-container {
+        margin-top: -100px;
+    }
+
+    .title-header-object {
+        font-size: 25px;
+    } 
+
+    img.phone-icon {
+        height: 28px;
+    }
+
+    img.header-logo {
+        height: 28px;
+    }
+}
