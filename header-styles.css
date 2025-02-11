@@ -37,9 +37,7 @@ button:focus {
 
 .header-object {
     display: flex;
-    padding: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 5px;
 }
 
 .header-object > h1 {
@@ -52,6 +50,15 @@ img.phone-icon {
 
 img.header-logo {
     height: 120px;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: all linear 0.5s;
+}
+
+.nav-button {
+    transition: all linear 0.5s;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .nav-img {

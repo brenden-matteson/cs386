@@ -16,3 +16,22 @@ for (i = 0; i < buttons.length; i++) {
         } 
     });
 }
+
+window.addEventListener("scroll", function() {
+    let logo = document.getElementById("header-logo");
+    let nav = document.getElementById("nav-button");
+    if (window.scrollY > 50) { 
+        logo.style.height = "80px";
+        logo.style.paddingLeft = "10px";
+        logo.style.paddingRight = "10px";
+        nav.style.paddingLeft = "10px";
+        nav.style.paddingRight = "10px";
+    } else {
+        logo.style.height = "120px";
+        logo.style.paddingLeft = "50px";
+        logo.style.paddingRight = "50px";
+        nav.style.paddingLeft = "50px";
+        nav.style.paddingRight = "50px";
+    }
+});
+
