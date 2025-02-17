@@ -115,7 +115,7 @@ Alternate Scenario:
 * System cannot calculate pie chart
 * System notifies user
 
-  
+![Use Case 1](use-case-1.png)
 
 Use Case #2: Learning how to improve credit score
 
@@ -140,8 +140,7 @@ Alternate Scenario:
 * System fails to load the content
 * System displays an error message stating the site does not exist
 
-
-
+![Use Case 2](use-case-2.png)
 
 Use Case #3: Update budget
 
@@ -169,7 +168,7 @@ Alternate Scenario:
 * System informs user of file read error.
 * System requests new file.
 
-
+![Use Case 3](use-case-3.png)
 
 Use Case #4: Estimates Yearly Salary
 
@@ -193,7 +192,7 @@ Alternate Scenario:
 * System informs user that the field only accepts numerical values
 * System asks user to insert numerical value
 
-
+![Use Case 4](use-case-4.png)
 
 ## User Stories
 
