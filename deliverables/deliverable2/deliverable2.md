@@ -47,11 +47,26 @@ Young adults (ages 18-24), primarily those with moderate to low incomes, who wan
 
 ## Non-Functional Requirements
 
-* Speed, it is important that the users are able to insert input and receive an output in a timely manner.
-* Scalability, we want our website to be able to work well on phones, laptops, ipads etc.
-* Reliability, Our website should provide consistent and reliable results.
-* Usability, Our website should be intuitive to use and easy to understand.
-* Optimization, Our website should have no issues running on slower internet speeds, we don’t want the bottleneck of the product to be the service itself.
+Speed
+* Importance:  it is important that the users are able to insert input and receive an output in a timely manner.
+*Verifiability: The systems response time should be 0.5 seconds or less for 90% of normal user interactions
+
+Scalability
+* Importance:  we want our website to be able to work well on phones, laptops, ipads etc.
+* Verifiability: The system should be available for at least 80% of commonly used devices and browsers.
+
+Reliability
+* Importance:  Our website should provide consistent and reliable results.
+* Verifiability: The system should have a 95% uptime over a year and will be able to handle at least 1000 users at the same time without failure
+
+Usability
+* Importance:  Our website should be intuitive to use and easy to understand.
+*Verifiability: At least 90% of test users should be able to use the website without help
+
+Optimization
+* Importance: Our website should have no issues running on slower internet speeds, we don’t want the bottleneck of the product to be the service itself.
+*Verifiability: The page should load in under 3 seconds for at least 80% of users who have wifi.
+
 
 
 ## Minimal Viable Product
@@ -63,13 +78,16 @@ The MVP for SimpleCents will focus on delivering core functionalities that provi
 Expense Tracking
 * Users can manually enter their expenses into different categories (e.g., food, housing, entertainment).
 * A simple visual breakdown (pie chart or bar graph) of spending habits is displayed.
+* Testing Plan: UI testing to see if the pie chart or bar graphs are updated dynamically based on the user inputs and usability testing because users will also track their expenses and confirm that the received data is correct.
 
 Budget Estimation & Goal Setting
 * Users can input their income and fixed expenses to see how much they can spend/save.
 * A recommended monthly savings amount is suggested based on financial goals.
+* Testing Plan: Functional testing will be used to verify that the budget calculations are accurate.
 
 Debt Management
 * Users can enter outstanding debt balances and interest rates to see minimum monthly payments needed to avoid penalties.
+* Testing Plan: User testing to be certain that the repayment estimates are clear and accurate and usability testing to check if users can easily input dept details.
 
 ## Use Cases
 
