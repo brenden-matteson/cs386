@@ -49,7 +49,7 @@ Young adults (ages 18-24), primarily those with moderate to low incomes, who wan
 
 Speed
 * Importance:  it is important that the users are able to insert input and receive an output in a timely manner.
-*Verifiability: The systems response time should be 0.5 seconds or less for 90% of normal user interactions
+* Verifiability: The systems response time should be 0.5 seconds or less for 90% of normal user interactions
 
 Scalability
 * Importance:  we want our website to be able to work well on phones, laptops, ipads etc.
@@ -61,11 +61,11 @@ Reliability
 
 Usability
 * Importance:  Our website should be intuitive to use and easy to understand.
-*Verifiability: At least 90% of test users should be able to use the website without help
+* Verifiability: At least 90% of test users should be able to use the website without help
 
 Optimization
 * Importance: Our website should have no issues running on slower internet speeds, we don’t want the bottleneck of the product to be the service itself.
-*Verifiability: The page should load in under 3 seconds for at least 80% of users who have wifi.
+* Verifiability: The page should load in under 3 seconds for at least 80% of users who have wifi.
 
 
 
@@ -107,13 +107,15 @@ Success Scenario:
 * User inserts pay
 * User inserts necessary expenses
 * User inserts unnecessary expenses
-* Website calculates wage:spending ratio
-* Website returns pie chart of spending habits
+* System calculates wage:spending ratio
+* System returns pie chart of spending habits
 
 Alternate Scenario:
 * Client spends more money than they make
-* Website cannot calculate pie chart
-* Website notifies user
+* System cannot calculate pie chart
+* System notifies user
+
+  
 
 Use Case #2: Learning how to improve credit score
 
@@ -126,15 +128,20 @@ Pre-conditions: The website has a site that teaches about credit score
 Post-conditions: The actor sees actionable tips for building their credit score
 
 Success Scenario:
-* The actor clicks on the “How to improve credit” page
-* The educational site pops up that displays information about credit score
-* The actor learns about the different ways to create good credit score
-* The actor understands how credit scoring works and how to improve it
+* User open the Financial Education section
+* User selects the “How to improve credit” page
+* System loads an educational page with information about credit score
+* User  reads about different ways to create good credit score
+* User understands how credit scoring works and how to improve it
+
 
 Alternate Scenario:
-* The actor clicks on the “How to improve credit” page
-* The site fails to load the content
-* An error shows up saying the site does not exist
+* User selects the “How to improve credit” page
+* System fails to load the content
+* System displays an error message stating the site does not exist
+
+
+
 
 Use Case #3: Update budget
 
@@ -147,7 +154,7 @@ Pre-conditions: User has already created a budget with this website.
 Post-conditions: User receives updated budget file.
 Success Scenario:
 * User opens Make a Budget page
-* User clicks on upload budget
+* User selects to upload budget
 * User browses for their budget file
 * User uploads budget
 * System reads .csv file
@@ -162,6 +169,8 @@ Alternate Scenario:
 * System informs user of file read error.
 * System requests new file.
 
+
+
 Use Case #4: Estimates Yearly Salary
 
 Actor: Working college student
@@ -175,39 +184,55 @@ Post-Conditons User receives estimated yearly salary
 Success Scenario:
 * User inserts wage
 * User inserts hours 
-* Website estimates yearly income
-* Website displays yearly income to the user 
+* System estimates yearly income
+* System displays yearly income to the user 
 
 Alternate Scenario:
 * User inserts non-numerical value
 * User hits enter
-* Website informs user that the field only accepts numerical values
-* Website asks user to insert numerical value
+* System informs user that the field only accepts numerical values
+* System asks user to insert numerical value
+
 
 
 ## User Stories
 
 “As a college student who is in debt, I want a means of tracking my debt so that I can regain control of my finances and start saving money to put towards my debt.”
+* Priority: High
+* Estimated Time Commitment: 10 hours
 
 “As a 20 year old who has a hard time saving money, I want to be able to visualize my spending habits so that I can refine them to be able to save more.”
+* Priority: Medium
+* Estimated Time Commitment: 7 hours
 
 “As a college student, I want to see how much money I should save each month, so that I will be able to put a down payment on a house when I graduate.”
+* Priority: Medium
+* Estimated Time Commitment: 5 hours
 
 “As a full-time worker, I want to see how much money I spend on non-essential items, so that I can save more money."
+* Priority: High
+* Estimated Time Commitment: 6 hours
 
 "As a young adult, I want an easy way to track my expenses so that I can better understand where my money is going."
+* Priority: High
+* Estimated Time Commitment: 12 hours
 
 "As a college student, I want to set spending limits on different categories like food and housing so that I don’t overspend on different categories."
+* Priority: Medium
+* Estimated Time Commitment: 9 hours
 
 “As a part-time college student and worker , I want to be able estimate how much I can spend on groceries so that I don’t overspend my check for that week."
+* Priority: Medium
+* Estimated Time Commitment: 6 hours
 
 “As a graduate student and worker, I want to be able to keep track of how much I should save after each check, so that I can save up for events that I have planned."
+* Priority: High
+* Estimated Time Commitment: 9 hours
 
 ## Issue Tracker
 
 https://github.com/brenden-matteson/cs386/issues
 
 ![Issue Tracker](issue-tracker.png)
-
 
 **Disclaimer:** We use a Google Document to draft our deliverables, and then we transfer that information into our github document. That would be why there may only be one or two people "committing" on this deliverabe.
