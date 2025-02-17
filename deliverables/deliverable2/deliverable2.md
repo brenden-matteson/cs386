@@ -209,15 +209,5 @@ https://github.com/brenden-matteson/cs386/issues
 
 ![Issue Tracker](issue-tracker.png)
 
-## Teamwork
-
-Brenden: 25%, worked on 2 user stories, 1 use case description, some functional requirements and non-functional requirements, stakeholders.
-
-Makaela: 25%, Updated deliverable 2’s non functional requirements, as well as one use case description, and two user stories then added to github issues. Created positioning problem statement and product position statement.
-
-Tyson: 25%, Updated deliverable 2’s user story descriptions(put in 2), as well as update the Minimum Viable Product, and put in one use case for the UML.
-GitHub: create two issues for the each of the stories I input
-
-Jered: 25%, Created two user stories and added them to the github issues, created one use case description, helped on stakeholders and the Minimum Viable Product part.
 
 **Disclaimer:** We use a Google Document to draft our deliverables, and then we transfer that information into our github document. That would be why there may only be one or two people "committing" on this deliverabe.
