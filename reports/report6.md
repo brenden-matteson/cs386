@@ -28,6 +28,17 @@ Jered:
 * GitHub Summary: 1 commit.
     * (c10366c5cee1b7a4ea7a0e6e11cf865e819807ac)
 
+Makaela:
+* Worked on project presentation
+* Worked on script for presentation
+* GitHub Summary: 0 commits.
+
+Tyson:
+* Worked on what possible object arrays could be used in JS file
+* Tested the beginner functions for calculating estimated Salary
+* GitHub Summary: 0 commits.
+
+
 ## Retrospective
 
 Appreciations: Everyone has been working hard to get everything we need finished.
@@ -56,4 +67,7 @@ Makaela:
 * Work on implementation of the survey.
 * Finish up presentation.
 
-
+Tyson:
+* Have the 3 main functions to calculate debt, salary, and expenses functional
+* Write skeleton code for more functions to be implemented
+* Work towards deliverable 4
