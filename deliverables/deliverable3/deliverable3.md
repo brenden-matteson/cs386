@@ -11,3 +11,5 @@ SimpleCents is intuitive, easy to use, and most importantly, free to use. That�
 SimpleCents also includes a Financial Wellness Guide that educates users on topics such as credit building, savings strategies, and responsible spending. The platform also provides an income estimation tool, allowing users to input their weekly earnings and work hours to project their annual salary. SimpleCents also exports the user’s financial data to a CSV file enabling users to upload it later to update their budget with new information. This also doubles as a form of login as the data collected is not stored by SimpleCents and user’s can upload their information for ease of use.
 
 ## Model
+
+![UML Diagram](deliverable3UMLCLASS.png)
