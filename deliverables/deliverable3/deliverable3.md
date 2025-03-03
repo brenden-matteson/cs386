@@ -12,4 +12,4 @@ SimpleCents also includes a **Financial Wellness Guide** that educates users on 
 
 ## Model
 
-![UML Diagram](deliverable3UMLCLASS.png)
+![UML Diagram](deliverable3.png)
