@@ -23,17 +23,20 @@ Brenden:
 * GitHub Summary: 7 commits.
 
 Makaela:
-* 
+* Completed survey implementation
+* Worked towards deliverable 4
 
 Jered:
-* 
+* Worked towards deliverable 4
+* Worked on the financial wellness page
 
 Tyson:
-* 
+* Updated the JavaScript code to be implemented on a test website as baic functions
+* Worked toward deliverable 4
 
 ## Retrospective
 
-Appreciations: Thank you Jered for doing extra work on the in-class assignments. Thank you Makaela for creating the beta_testing survey. 
+Appreciations: Thank you Jered for doing extra work on the in-class assignments. Thank you Makaela for creating the beta testing survey. 
 
 Successes: Website seems to be coming together.
 
@@ -46,16 +49,18 @@ What we should try next time: Start working on the Deliverable earlier.
 ## Next Steps
 
 Brenden:
-* Refine main webpage
-* Implement media queries for stylesheets for better optimization for other devices.
-* Work on Deliverable 4
+* Keep working on Deliverable 4
+* Start implementation of the contact us form.
+* Find a better way to implement the java script that is is used for the header on every page.
 
 Makaela:
-* Finish survey implementation
+* Work towards deliverable 5
+* Find something to work on for the website
 
 Jered:
-* Get prepared for the implementation section of the website
+* Finish the financial wellness page
 
 Tyson:
-* Start to implement and test the JS code on a placeholder website
-* Work on Deliverable 4
+* Keep working toward finishing Deliverable 4
+* Start implementing the javascript functions to be used on the website
+* Work with Brenden to get input fields set up
