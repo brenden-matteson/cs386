@@ -132,23 +132,15 @@ img.header-logo {
         width: 30px;
     }
 
-    .home-picture > img {
-        height: 300px;
-    }
-
-    .title-header-container {
-        margin-top: -100px;
-    }
-
-    .title-header-object {
-        font-size: 25px;
-    } 
-
-    img.phone-icon {
-        height: 28px;
-    }
-
     img.header-logo {
-        height: 28px;
+        height: 60px;
+        padding-left: 25px;
+        padding-right: 25px;
+        transition: all linear 0.5s;
+    }
+
+    .nav-button {
+        padding-left: 25px;
+        padding-right: 25px;
     }
 }
