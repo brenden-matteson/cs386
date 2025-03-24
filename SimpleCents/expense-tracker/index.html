@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="./styles.css">
         <link rel="stylesheet" href="../header-styles.css">
         <link rel="stylesheet" href="../footer-styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
 
     <!-- header information -->
@@ -49,7 +51,27 @@
     </header>
 
     <body>
+        <h2>Income & Expenses Calculator</h2>
         
+        <label>Work Hours Per Week: <input type="number" value="0" id="workHours" ></label>
+        <label>Hourly Pay Rate: <input type="number" value="0" id="payRate" ></label>
+        
+        <h3>Expenses (Monthly)</h3>
+        <label>Groceries: <input type="number" value="0" id="groceries" ></label>
+        <label>Rent: <input type="number" value="0" id="rent" ></label>
+        <label>Utilities: <input type="number" value="0" id="util" ></label>
+        <label>Clothing: <input type="number" value="0" id="clothing" ></label>
+        <label>Entertainment: <input type="number" value="0" id="entertainment" ></label>
+        <label>Food: <input type="number" value="0" id="food" ></label>
+        
+        <button id="calculateBtn">Calculate</button>
+        
+        <h3>Results</h3>
+        <p>Estimated Pay for the year: $<span id="payResult">0</span></p>
+        <p>Total est Expenses for the year: $<span id="expenseResult">0</span></p>
+        <p>Remaining Balance: $<span id="balanceResult">0</span></p>
+        
+        <canvas id="myChart" width="200" height="200"></canvas>
     </body>
 
     <!-- footer information -->
@@ -72,6 +94,4 @@
     </footer>
     <!-- link to javascript -->
     <script src="./script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </html>
