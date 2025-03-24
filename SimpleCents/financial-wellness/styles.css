@@ -1,7 +1,6 @@
 body {
     font-family: Arial, sans-serif;
     margin: 40px;
-    padding: 20px;
     background-color: #f4f4f4;
 }
 
@@ -18,6 +17,34 @@ img {
     margin: 0 auto;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: center;
+    margin-bottom: 50px;   
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: F4F4F4;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1),0 2px 10px 0 rgba(0,0,0,0.08);
+    transition: 0.5s;
+}
+
+.sources {
+    margin-top: 50px;
+    margin-bottom: 50px;   
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: F4F4F4;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1),0 2px 10px 0 rgba(0,0,0,0.08);
+    transition: 0.5s;
+}
 
 .excellent {
     border-left-color: #4CAF50; 
@@ -40,7 +67,20 @@ img {
     background: #eda8b3;
 }
 
+@media only screen and (max-width: 700px) {
 
+    .container {
+        margin-left: 5%;
+        margin-right: 5%;
+        transition: 0.5s;
+    }
+
+    .sources {
+        margin-left: 5%;
+        margin-right: 5%;
+        transition: 0.5s;
+    }
+}
 
 
 
