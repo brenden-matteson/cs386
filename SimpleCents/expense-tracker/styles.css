@@ -58,3 +58,18 @@ h2 {
 #myChart {
     width: 80%;
 }
+
+@media only screen and (max-width: 700px) {
+
+    .expense-container {
+        margin-left: 5%;
+        margin-right: 5%;
+        transition: 0.5s;
+    }
+
+    .chart-container {
+        margin-left: 5%;
+        margin-right: 5%;
+        transition: 0.5s;
+    }
+}
