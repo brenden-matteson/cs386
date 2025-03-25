@@ -87,7 +87,7 @@ Budget Estimation & Goal Setting
 
 Debt Management
 * Users can enter outstanding debt balances and interest rates to see minimum monthly payments needed to avoid penalties.
-* Testing Plan: User testing to be certain that the repayment estimates are clear and accurate and usability testing to check if users can easily input dept details.
+* Testing Plan: User testing to be certain that the repayment estimates are clear and accurate and usability testing to check if users can easily input debt details.
 
 ## Use Cases
 
@@ -133,7 +133,6 @@ Success Scenario:
 * System loads an educational page with information about credit score
 * User  reads about different ways to create good credit score
 * User understands how credit scoring works and how to improve it
-
 
 Alternate Scenario:
 * User selects the “How to improve credit” page
