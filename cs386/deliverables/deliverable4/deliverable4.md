@@ -7,12 +7,72 @@ SimpleCents is a website project meant to assist young adults and college studen
 ## Requirements
 
 Requirement: As a user of SimpleCents I want to give feedback on the website so that it can be optimized to my liking.
+
 Issue:
+
 Pull request:
+
 Implemented by: Makaela Crookes
+
 Approved by: Brenden Matteson
 
-<img>
+![survey](survey-1.png)
+
+Requirement: As a user of the financial website, I want to access reliable information about credit scores, credit cards, and financial habits so that I can be informed and improve my financial well-being.
+
+Issue: https://github.com/brenden-matteson/cs386/issues/34
+
+Pull request: https://github.com/brenden-matteson/cs386/pull/42
+
+Implemented by: Jered Angous
+
+Approved by: Jered Angous
+
+![financial wellness page](financial-wellness-1.png)
+
+Requirement: As a user of SimpleCents, I want to be able to use SimpleCents on my phone, so that I check my finances more easily.
+
+Issue: https://github.com/brenden-matteson/cs386/issues/51
+
+Pull Request: https://github.com/brenden-matteson/cs386/pull/44 
+
+Implemented By: Brenden Matteson
+
+Approved By: Jered Angous
+
+![home page](home-page-mobile-1.png)
+![financial wellness page](financial-wellness-mobile-1.png)
+![expense tracker page](expense-tracker-mobile-1.png)
+
+Requirement: As a User, I want each page in the website to look cohesive, so that the website feels more refined and thought out.
+
+Issue:
+* https://github.com/brenden-matteson/cs386/issues/49
+* https://github.com/brenden-matteson/cs386/issues/50
+
+Pull Request: https://github.com/brenden-matteson/cs386/pull/44 
+
+Implemented By: Brenden Matteson
+
+Approved By: Jered Angous
+
+![financial wellness page](financial-wellness-1.png)
+![expense tracker page](expense-tracker-1.png)
+
+Requirement: As a 20 year old who has a hard time saving money, I want to be able to visualize my spending habits so that I can refine them to be able to save more.
+
+Issue:
+* https://github.com/brenden-matteson/cs386/issues/22
+* https://github.com/brenden-matteson/cs386/issues/33
+
+Pull Request: https://github.com/brenden-matteson/cs386/pull/42 
+
+Implemented By: Tyson Charles
+
+Approved By: Jered Angous
+
+![expense tracker page](expense-tracker-2.png)
+![expense tracker page](expense-tracker-3.png)
 
 ## Tests
 
@@ -52,7 +112,17 @@ MIT LICENSE, we chose this license because it best reflected our intentions with
 
 ## Readme File
 
+All of our files are located in the root directory of the repository.
+
 ## UX Design
+
+We looked at several other budgeting websites along with what current UX design looks like in practice. It is loosly related to how Apple does their widgets in that each major grouping of elements is a rounded rectangle with a drop shadow.
+
+![home page](home-page-1.png)
+![home page](home-page-2.png)
+![home page](home-page-3.png)
+![expense tracker page](expense-tracker-1.png)
+![financial wellness page](financial-wellness-1.png)
 
 <img>
 
@@ -62,4 +132,4 @@ The lessons we learned from the first release is that we need to start the imple
 
 ## Demo
 
-<img>
+https://youtu.be/wVdF2P1LVas
