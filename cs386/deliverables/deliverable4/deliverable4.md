@@ -8,10 +8,6 @@ SimpleCents is a website project meant to assist young adults and college studen
 
 Requirement: As a user of SimpleCents I want to give feedback on the website so that it can be optimized to my liking.
 
-Issue:
-
-Pull request:
-
 Implemented by: Makaela Crookes
 
 Approved by: Brenden Matteson
@@ -76,6 +72,12 @@ Approved By: Jered Angous
 
 ## Tests
 
+We used a live server to test our HTML, CSS, and JavaScript implementations. With this we can see the real world updates and verify that everything works as expected in the browser. We did not use a specific test framework like JUnit or pytest because we wanted to focus on the frontend using the live server.
+
+![expense tracker page](expense-tracker-2.png)
+![expense tracker page](expense-tracker-3.png)
+![expense tracker page](expense-tracker-4.png)
+
 ## Technology
 
 1. **HTML (Hypertext Markup Language)**
@@ -123,8 +125,6 @@ We looked at several other budgeting websites along with what current UX design 
 ![home page](home-page-3.png)
 ![expense tracker page](expense-tracker-1.png)
 ![financial wellness page](financial-wellness-1.png)
-
-<img>
 
 ## Lessons Learned
 
