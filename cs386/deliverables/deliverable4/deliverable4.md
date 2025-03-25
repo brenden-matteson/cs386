@@ -74,6 +74,10 @@ Approved By: Jered Angous
 
 We used a live server to test our HTML, CSS, and JavaScript implementations. With this we can see the real world updates and verify that everything works as expected in the browser. We did not use a specific test framework like JUnit or pytest because we wanted to focus on the frontend using the live server.
 
+![expense tracker page](expense-tracker-2.png)
+![expense tracker page](expense-tracker-3.png)
+![expense tracker page](expense-tracker-4.png)
+
 ## Technology
 
 1. **HTML (Hypertext Markup Language)**
