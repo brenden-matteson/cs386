@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 40px;
@@ -9,6 +14,10 @@ h1 {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
 
 img {
     max-width: 100%;
@@ -27,7 +36,7 @@ img {
     margin-bottom: 50px;   
     margin-left: 20%;
     margin-right: 20%;
-    background-color: F4F4F4;
+    background-color: #F4F4F4;
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1),0 2px 10px 0 rgba(0,0,0,0.08);
@@ -39,7 +48,7 @@ img {
     margin-bottom: 50px;   
     margin-left: 20%;
     margin-right: 20%;
-    background-color: F4F4F4;
+    background-color: #F4F4F4;
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1),0 2px 10px 0 rgba(0,0,0,0.08);
@@ -67,6 +76,22 @@ img {
     background: #eda8b3;
 }
 
+#nav-container {
+    position: fixed;
+    top: 100px;
+    padding: 25px;
+    margin-left: 15px;
+    width: 150px;
+    z-index: 1;
+    display: block;
+}
+
+.nav-object {
+    border-left: 2px solid #2A5D67;
+    padding: 10px;
+}
+
+
 @media only screen and (max-width: 700px) {
 
     .container {
@@ -79,6 +104,13 @@ img {
         margin-left: 5%;
         margin-right: 5%;
         transition: 0.5s;
+    }
+}
+
+@media only screen and (max-width: 875px) {
+
+    #nav-container {
+        display: none;
     }
 }
 
