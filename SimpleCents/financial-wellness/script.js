@@ -51,9 +51,9 @@ window.addEventListener("scroll", function() {
     }
     // for side bar
     if (window.innerWidth > 600) {
-        if(window.scrollY > 5700) {
+        if(window.scrollY > 6100) {
             sideNav.style.position = "absolute";
-            sideNav.style.top = "5800px";
+            sideNav.style.top = "6200px";
         }
         else{
             sideNav.style.position = "fixed";
