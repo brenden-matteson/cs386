@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="./styles.css">
         <link rel="stylesheet" href="../header-styles.css">
         <link rel="stylesheet" href="../footer-styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
 
     <!-- header information -->
@@ -49,7 +51,44 @@
     </header>
 
     <body>
+        <div class ="expense-container">
+            <h2>Income & Expenses Calculator</h2>
+
+            <h3>Income</h3>
+            <label for="workHours">Work Hours Per Week:</label>
+            <input type="number" value="0" id="workHours" >
+            <label for="payRate">Hourly Pay Rate:</label>
+            <input type="number" value="0" id="payRate" >
+            
+            <h3>Expenses (Monthly)</h3>
+            <label for="groceries">Groceries:</label>
+            <input type="number" value="0" id="groceries" >
+            <label for="rent">Rent:</label>
+            <input type="number" value="0" id="rent" >
+            <label for="util">Utilities:</label>
+            <input type="number" value="0" id="util" >
+            <label for="clothing">Clothing:</label>
+            <input type="number" value="0" id="clothing" >
+            <label for="entertainment">Entertainment:</label>
+            <input type="number" value="0" id="entertainment" >
+            <label for="food">Food:</label>
+            <input type="number" value="0" id="food" >
+
+            <input type="submit" name="submit" id="calculateBtn" value="Calculate" required>
+            
+            <!--<button id="calculateBtn">Calculate</button>-->
+        </div>
         
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
+
+        <div class="expense-container">
+            <h3>Results</h3>
+            <p>Estimated Pay for the year: $<span id="payResult">0</span></p>
+            <p>Total est Expenses for the year: $<span id="expenseResult">0</span></p>
+            <p>Remaining Balance: $<span id="balanceResult">0</span></p>
+        </div>
     </body>
 
     <!-- footer information -->

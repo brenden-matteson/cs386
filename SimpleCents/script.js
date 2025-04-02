@@ -38,4 +38,3 @@ window.addEventListener("scroll", function() {
         }
     }
 });
-
