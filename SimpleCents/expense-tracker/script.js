@@ -76,12 +76,12 @@ const myChart = new Chart(ctx,{
                 newExpenses.Food
             ],
             backgroundColor: [
-                'rgb(255, 99, 132)',
-                'rgb(54, 162, 235)',
-                'rgb(255, 205, 86)',
-                'rgb(11, 243, 108)',
-                'rgb(214, 58, 167)',
-                'rgb(128, 51, 230)'
+                'rgb(54, 69, 79)',
+                'rgb(79, 99, 111)',
+                'rgb(105, 130, 145)',
+                'rgb(132, 163, 181)',
+                'rrgb(160, 197, 217)',
+                'rgb(189, 232, 255)'
             ],
             hoverOffset: 4
         }]
