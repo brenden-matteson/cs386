@@ -2,16 +2,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: white;
 }
 
 .container {
-    width: 50%;
-    margin: 50px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-bottom: 50px;   
+    margin-left: 20%;
+    margin-right: 20%;
+    background: #f4f4f4;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1),0 2px 10px 0 rgba(0,0,0,0.08);
+    transition: 0.5s;
 }
 
 h1 {
@@ -38,14 +41,14 @@ input, select, textarea {
 
 button {
     margin-top: 15px;
-    padding: 10px;
-    background: #0878f0;
-    color: white;
-    border: none;
+    padding: 15px;
     border-radius: 5px;
     cursor: pointer;
+    border: 1px solid #ccc;
 }
 
 button:hover {
-    background: #086dda;
+    background: #2A5D67;
+    transition-duration: 0.2s;
+    color: white;
 }
