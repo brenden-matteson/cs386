@@ -12,7 +12,7 @@ Our architecture is designed as a monolithic system with lightweight static JSON
 
 ## Class Diagram
 
-![class diagram](../deliverable3/deliverable3.png)
+![class diagram](class.drawio.png)
 
 ## Sequence Diagram
 
