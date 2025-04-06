@@ -8,7 +8,7 @@ SimpleCents is a website project meant to assist young adults and college studen
 
 ![architecture diagram](architecture.drawio.png)
 
-Our architecture is designed as a monolithic system with lightweight static JSON file storage, prioritizing simplicity and efficiency for a small-scale project like SimpleCents. It separates concerns into three core layers: Presentation Layer for user interactions, Business Logic Layer for processing events and input, and a lightweight Data Handling Module that helps allow us to temporarily store information for our budget creation portion.
+Our architecture is designed as a monolithic system with lightweight static JSON file storage (not implemented yet), prioritizing simplicity and efficiency for a small-scale project like SimpleCents. It separates concerns into three core layers: Presentation Layer for user interactions, Business Logic Layer for processing events and input, and a lightweight Data Handling Module that helps allow us to temporarily store information for our budget creation portion.
 
 ## Class Diagram
 
