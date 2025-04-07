@@ -26,6 +26,8 @@ h2 {
     padding: 15px;
     width: 100%;
     box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 .chart-container {
@@ -47,6 +49,8 @@ h2 {
     padding: 15px;
     width: 100%;
     box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 #calculateBtn:hover {
