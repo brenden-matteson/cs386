@@ -52,4 +52,12 @@ Approved by: Jered Angous
 
 ## Code Quality
 
+Before implementation 1, we created a “requirements” document in our files directory which contained the rules that we would be using for our implementation including webpage layout, naming conventions, css formatting, and javascript formatting. Most of these requirements are relatively standard for most web development, but we wanted to make sure we were all working with the same rules so that our code looks cohesive. 
+
+Here’s a link to our requirements document in our GitHub repository:
+
+https://github.com/brenden-matteson/cs386/blob/main/SimpleCents/files/requirements.md
+
 ## Lessons Learned
+
+During this second release our team learned a lot. We found the efficiency of working together is a lot better than working alone. We also learned that it is important to start working on deliverables way ahead of time to allow for mistakes as well as to allow for the best possible work. Sending our work to be looked over was extremely useful and important to our success. If we were to continue developing the project there is not much we would change, we worked pretty efficiently together.
