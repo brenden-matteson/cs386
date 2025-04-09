@@ -102,7 +102,7 @@ We used a live server to test our HTML, CSS, and JavaScript implementations. Wit
 
 ## Deployment
 
-https://brendenmatteson.com/archive/SimpleCents-web/ 
+https://brendenmatteson.com/archive/SimpleCents/ 
 
 We are soft deploying our system on one of our member's personal website, to make it cheaper to host.
 

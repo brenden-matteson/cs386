@@ -22,12 +22,43 @@ h2 {
     transition: 0.5s;
 }
 
-.expense-container input {
+.expense-container input, select {
     padding: 15px;
     width: 100%;
     box-sizing: border-box;
     border-radius: 5px;
     border: 1px solid #ccc;
+}
+
+.hourlySection {
+    margin-top: 10px;
+}
+
+.hourlySection input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.salarySection { 
+    display: none;
+    margin-top: 10px;
+}
+
+.salarySection input { 
+    margin-top: 10px;
+}
+
+.contractSection {
+    display: none;
+    margin-top: 10px;
+}
+
+.contractSection input, button {
+    margin-top: 10px;
+}
+
+#contractsText {
+    margin-top: 10px;
 }
 
 .chart-container {
