@@ -103,20 +103,6 @@ const myChart = new Chart(ctx,{
     }
 });
 
-
-//Basic function that calculates total projected pay for the year
-/*function totalPay( workHours, payRate){
-    if( workHours <= 0 || payRate <= 0 ){
-        alert("No pay can be estimated");
-        return;
-    }
-    else{
-        estPay = workHours * payRate * 52;
-        return estPay;
-    }
-
-}*/
-
 //function that calculates the total projected expendetures for the month
 function totalCost( newExpenses ){
     let sumCost = 0;
@@ -180,7 +166,7 @@ $('#calculateBtn').click(function () {
     let user = new income();
 
     if(typeOfIncome.value == "hourly") {
-        user = new hourly($("#workHours").val(),$("#payRate").val());
+        user = new hourly($("#payRate").val(),$("#workHours").val());
     }
     else if(typeOfIncome.value == "salary") {
         user = new salary($("#yearlySalary").val());
