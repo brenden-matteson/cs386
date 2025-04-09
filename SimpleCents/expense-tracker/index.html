@@ -55,15 +55,34 @@
             <h2>Income & Expenses Calculator</h2>
 
             <h3>Income</h3>
-            <label for="workHours">Work Hours Per Week:</label>
-            <input type="number" value="0" id="workHours" >
-            <label for="payRate">Hourly Pay Rate:</label>
-            <input type="number" value="0" id="payRate" >
+            <label for="typeOfIncome">Type of Income:</label>
+            <select id="typeOfIncome">
+                <option name="hourly" value="hourly">Hourly</option>
+                <option name="salary" value="salary">Salary</option>
+                <option name="contract" value="contract">Contract</option>
+            </select>
+            <div class="hourlySection">
+                <label for="workHours">Work Hours Per Week:</label>
+                <input type="number" value="0" id="workHours" >
+                <label for="payRate">Hourly Pay Rate:</label>
+                <input type="number" value="0" id="payRate" >
+            </div>
+            <div class="salarySection">
+                <label for="yearlySalary">Yearly Salary:</label>
+                <input type="number" value="0" id="yearlySalary" >
+            </div>
+            <div class="contractSection">
+                <label for="contractPayout">Contract Payout:</label>
+                <input type="number" value="0" id="contractPayout" >
+                <input type="button" value="Add" id="addContract">
+                <div id="contractsText">Contracts: </div>
+                <input type="button" value="Remove Recent" id="removeContract">
+            </div>
             
             <h3>Expenses (Monthly)</h3>
             <label for="groceries">Groceries:</label>
             <input type="number" value="0" id="groceries" >
-            <label for="rent">Rent:</label>
+            <label for="rent">Rent/Mortgage:</label>
             <input type="number" value="0" id="rent" >
             <label for="util">Utilities:</label>
             <input type="number" value="0" id="util" >
