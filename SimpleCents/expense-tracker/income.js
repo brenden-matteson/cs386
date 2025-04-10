@@ -40,13 +40,6 @@ class salary extends income {
 
 class contract extends income {
     constructor(contracts = []) {
-        /*
-        if (contracts.length == 0) {
-            alert("No pay can be estimated");
-            return; // Exit the constructor early
-        }
-            */
-
         super();
         this.contracts = contracts;
         this.contractPayout = this.contracts.reduce((acc, val) => acc + val, 0);

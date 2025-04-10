@@ -58,7 +58,50 @@ Approved by: Jered Angous
 
 ![expense tracker page](requirement4.png)
 
+Requirement: Add a dropdown to select different time frames such as "weekly", "biweekly", "monthly", "yearly" for income and expenses.
+
+Issue: https://github.com/brenden-matteson/cs386/issues/48   
+
+Pull request: https://github.com/brenden-matteson/cs386/pull/65  
+
+Implemented by: Brenden Matteson
+
+Approved by: Jered Angous
+
+![expense tracker page](requirement5-1.png)
+![expense tracker page](requirement5-2.png)
+
 ## Tests
+
+The testing framework that we used is jest, which is a JavaScript Testing Framework that uses node.js. The node_modules are hosted locally because theyre the same no matter the installation, so we dont have the node_modules in our GitHub repository.
+
+Link to tests folder: https://github.com/brenden-matteson/cs386/tree/main/node-test
+
+**Test Case Example 1:**
+
+This test case checks to ensure that the calculations for our income class is working as it should. We run three tests, one for each type of income that we use, hourly, salary, and contract.
+
+For our hourly class, the test creates a hourly object populated with two values: 17.40 for hourly wage, and 20 for hours per week. It then checks to make sure that the total annual income is equal to 18096.
+
+For our salary class, the test creates a salary object populated with one value: 25000 for yearly salary. It then checks to make sure that the total annual income is equal to that value.
+
+For our contract class, the test creates a contract object populated with an array of four contract payouts: 100, 100, 1000, and 1000. It then checks that the total annual income is equal to 2200.
+
+![tests 1, 2, and 3](test1&2&3.png)
+
+**Test Case Example 2:**
+
+This test case checks to ensure that the calculations for our expense class is working as it should. We run 1 test that encorporates all three of our subclasses, monthly, semi-annually and annually.
+
+This test creates three mock object arrays to simulate the HTMLCollections that is used in our expense tracker page. One for monthly expenses, another for semi-annual expenses, and another for annual expenses. The monthly expenses should be multiplied by 12, semi-annual by 2, and yearly as is. It then checks to that the total expenses is equal to 16120.
+
+![test 4](test4.png)
+
+When running the tests, it checks all test suites.
+
+**Results:**
+
+![results](results.png)
 
 ## Demo
 

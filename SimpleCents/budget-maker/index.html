@@ -49,7 +49,18 @@
     </header>
 
     <body>
+        <h2>Simple Budget Maker</h2>
 
+        <label>Monthly Income: $<input type="number" id="income" /></label>
+
+        <h3>Expenses</h3>
+          <div id="expenses"></div>
+          <button onclick="addExpense()">+ Add Expense</button>
+
+        <h3>Summary</h3>
+          <p id="summary">Total Expenses: $0 | Remaining: $0</p>
+
+        <script src="./budget.js"></script>
     </body>
 
     <!-- footer information -->

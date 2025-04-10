@@ -39,3 +39,29 @@ window.addEventListener("scroll", function() {
     }
 });
 
+//Gets the ID from the HTML 
+const expensesDiv = document.getElementById('expenses');
+const incomeInput = document.getElementById('income');
+const summary = document.getElementById('summary');
+//This will add an expense to the sum of Expenses
+function addExpense() {
+    const row = document.createElement('div');
+    row.className = 'expense-row';
+      row.innerHTML = `
+        <input type="text" placeholder="Name" />
+        <input type="number" placeholder="Amount" oninput="calculate()" />
+        <button onclick="this.parentElement.remove(); calculate();">Delete</button>
+      `;
+    expensesDiv.appendChild(row);
+}
+//This will detect when the calculate button is hit
+incomeInput.addEventListener('input', calculate);
+//This function calculates the Salary and what's leftover after the sum of expenses
+//is calculated and subtracted
+function calculate() {
+    const income = parseFloat(incomeInput.value) || 0;
+    const amounts = [...document.querySelectorAll('#expenses input[type="number"]')];
+    const totalExpenses = amounts.reduce((sum, input) => sum + (parseFloat(input.value) || 0), 0);
+    const remaining = income - totalExpenses;
+    summary.textContent = `Total Expenses: $${totalExpenses.toFixed(2)} | Remaining: $${remaining.toFixed(2)}`;
+}
