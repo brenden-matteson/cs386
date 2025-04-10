@@ -83,6 +83,18 @@ Approved by: Brenden Matteson
 
 ![contact us page](requirement6.png)
 
+Requirement: As a user, I want to be able to create a simple budget, so that I can know how much money I need to save each month.
+
+Issue: https://github.com/brenden-matteson/cs386/issues/32 
+
+Pull request: https://github.com/brenden-matteson/cs386/pull/66 
+
+Implemented by: Tyson Charles
+
+Approved by: Jered Angous
+
+![budget maker page](requirement7.png)
+
 ## Tests
 
 The testing framework that we used is jest, which is a JavaScript Testing Framework that uses node.js. The node_modules are hosted locally because theyre the same no matter the installation, so we dont have the node_modules in our GitHub repository.
@@ -127,6 +139,8 @@ When running the tests, it checks all test suites.
 ![results](results.png)
 
 ## Demo
+
+we dont have a demo yet!
 
 ## Code Quality
 
