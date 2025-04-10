@@ -4,14 +4,18 @@ class income {
     }
 
     totalPay() {
-        return this.totalAnnualIncome;
+        return Number(this.totalAnnualIncome);
+    }
+
+    monthlyPay() {
+        return Number((Number(this.totalAnnualIncome)/12).toFixed(2));
     }
 }
 
 class hourly extends income {
     constructor(hourlyPay, hoursPerWeek) {
 
-        if (hourlyPay == null || hoursPerWeek == null || isNaN(hourlyPay) || isNaN(hoursPerWeek) || hourlyPay == 0 || hoursPerWeek == 0) {
+        if (hourlyPay == null || hoursPerWeek == null || isNaN(hourlyPay) || isNaN(hoursPerWeek)) {
             alert("No pay can be estimated");
             return; // Exit the constructor early
         }
@@ -25,26 +29,19 @@ class hourly extends income {
 
 class salary extends income {
     constructor(yearlyIncome) { 
-        if (yearlyIncome == null || isNaN(yearlyIncome) || yearlyIncome == 0) {
+        if (yearlyIncome == null || isNaN(yearlyIncome)) {
             alert("No pay can be estimated");
             return; // Exit the constructor early
         }
 
         super();
         this.yearlyIncome = yearlyIncome;
-        this.weeklyIncome = this.yearlyIncome / 52;
-        this.biweeklyIncome = this.yearlyIncome / 26;
         this.totalAnnualIncome = this.yearlyIncome;
     }
 }
 
 class contract extends income {
     constructor(contracts = []) {
-        if (contracts.length == 0) {
-            alert("No pay can be estimated");
-            return; // Exit the constructor early
-        }
-
         super();
         this.contracts = contracts;
         this.contractPayout = this.contracts.reduce((acc, val) => acc + val, 0);
