@@ -81,17 +81,31 @@
             
             <h3>Expenses (Monthly)</h3>
             <label for="groceries">Groceries:</label>
-            <input type="number" value="0" id="groceries" >
+            <input type="number" value="0" id="groceries" class="monthly" name="Groceries:">
             <label for="rent">Rent/Mortgage:</label>
-            <input type="number" value="0" id="rent" >
+            <input type="number" value="0" id="rent" class="monthly" name="Rent/Mortgage:">
             <label for="util">Utilities:</label>
-            <input type="number" value="0" id="util" >
+            <input type="number" value="0" id="util" class="monthly" name="Utilities:">
+            <label for="subscriptionsMonthly">Subscriptions:</label>
+            <input type="number" value="0" id="subscriptionsMonthly" class="monthly" name="Subscriptions (Monthly):">
+            <label for="autoInsuranceMonthly">Auto Insurance:</label>
+            <input type="number" value="0" id="autoInsuranceMonthly" class="monthly" name="Auto Insurance:">
             <label for="clothing">Clothing:</label>
-            <input type="number" value="0" id="clothing" >
+            <input type="number" value="0" id="clothing" class="monthly" name="Clothing:">
             <label for="entertainment">Entertainment:</label>
-            <input type="number" value="0" id="entertainment" >
-            <label for="food">Food:</label>
-            <input type="number" value="0" id="food" >
+            <input type="number" value="0" id="entertainment" class="monthly" name="Entertainment:">
+            <label for="food">Takeout:</label>
+            <input type="number" value="0" id="food" class="monthly" name="Takeout:">
+
+            <h3>Expenses (Semi-Annually)</h3>
+            <label for="autoInsuranceSemiAnnually">Auto Insurance:</label>
+            <input type="number" value="0" id="autoInsuranceSemiAnnually" class="semi-annually" name="Auto Insurance:">
+
+            <h3>Expenses (Annually)</h3>
+            <label for="subscriptionsAnnually">Subscriptions:</label>
+            <input type="number" value="0" id="subscriptionsAnnually" class="annually" name="Subscriptions (Annually):">
+            <label for="autoInsuranceAnnually">Auto Insurance:</label>
+            <input type="number" value="0" id="autoInsuranceAnnually" class="annually" name="Auto Insurance:">
 
             <input type="submit" name="submit" id="calculateBtn" value="Calculate" required>
             
@@ -158,4 +172,6 @@
     </footer>
     <!-- link to javascript -->
     <script src="./script.js"></script>
+    <script src="./income.js"></script>
+    <script src="./expense.js"></script>
 </html>
