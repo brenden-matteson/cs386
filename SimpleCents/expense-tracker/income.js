@@ -8,7 +8,7 @@ class income {
     }
 
     monthlyPay() {
-        return this.totalAnnualIncome/12;
+        return Number((this.totalAnnualIncome/12).toFixed(2));
     }
 }
 
