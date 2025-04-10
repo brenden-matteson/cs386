@@ -47,12 +47,12 @@ const myChart = new Chart(ctx,{
             label: 'Expenses Dataset',
             data: [],
             backgroundColor: [
-                'rgb(54, 69, 79)',
-                'rgb(79, 99, 111)',
-                'rgb(105, 130, 145)',
-                'rgb(132, 163, 181)',
-                'rrgb(160, 197, 217)',
-                'rgb(189, 232, 255)'
+                'rgb(169, 184, 138)',
+                'rgb(76, 107, 60)',
+                'rgb(136, 176, 75)',
+                'rgb(127, 155, 125)',
+                'rgb(76, 92, 67)',
+                'rgb(165, 180, 68)'
             ],
             hoverOffset: 4
         }]
