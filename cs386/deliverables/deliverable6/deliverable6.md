@@ -99,15 +99,26 @@ For our salary class, the test creates a salary object populated with one value:
 
 For our contract class, the test creates a contract object populated with an array of four contract payouts: 100, 100, 1000, and 1000. It then checks that the total annual income is equal to 2200.
 
-![tests 1, 2, and 3](test1&2&3.png)
+The final test then checks to make sure when you have multiple sources of income, the total annual income is the sum of all the income sources.
+
+![tests 1, 2, 3, and 4](test1,2,3,4.png)
 
 **Test Case Example 2:**
 
-This test case checks to ensure that the calculations for our expense class is working as it should. We run 1 test that encorporates all three of our subclasses, monthly, semi-annually and annually.
+This test case checks to ensure that the calculations for our expense class is working as it should. We run 4 tests that encorporates all three of our subclasses, monthly, semi-annually and annually.
 
-This test creates three mock object arrays to simulate the HTMLCollections that is used in our expense tracker page. One for monthly expenses, another for semi-annual expenses, and another for annual expenses. The monthly expenses should be multiplied by 12, semi-annual by 2, and yearly as is. It then checks to that the total expenses is equal to 16120.
+This test creates three mock object arrays to simulate the HTMLCollections that is used in our expense tracker page. One for monthly expenses, another for semi-annual expenses, and another for annual expenses. The monthly expenses should be multiplied by 12, semi-annual by 2, and yearly as is. 
 
-![test 4](test4.png)
+The first test checks that the monthly expenses were properly handled and multipled to annual expenses.
+
+The second test checks that the semi annual expenses were properly handled and multipled to annual expenses.
+
+The third test checks that the annual expenses are properly handled.
+
+The final test then checks to that the total expenses is equal to 16120.
+
+![test 5, 6, 7](test5,6,7.png)
+![test 8](test8.png)
 
 When running the tests, it checks all test suites.
 
