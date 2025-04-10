@@ -1,4 +1,4 @@
-# Deliverable 5
+# Deliverable 6
 
 ## Introduction
 
@@ -6,7 +6,7 @@ The problem of poor money management affects young adults and college students; 
 
 SimpleCents is a website project meant to assist young adults and college students with their spending habits, it also intends to improve their financial literacy. We provide options for our users to visualize their spending habits in a pie chart, compared to their income, we help them visualize their debt and minimum payments necessary towards that debt. We offer information about credit scores and how credit cards work. Our website is a great opportunity for the users to expand on their knowledge and grow a healthy standard for their expenses and money habits.
 
-https://github.com/brenden-matteson/cs386 
+Link to our project: https://github.com/brenden-matteson/cs386 
 
 ## Requirements
 
@@ -46,7 +46,7 @@ Approved by: Jered Angous
 
 ![financial wellness page](requirement3.png)
 
-Requirement: Add more types of income for the expense tracker page.
+Requirement: As a user, I want to be able to be able to use multiple sources of income, so that I can find my total annual income.
 
 Issue: https://github.com/brenden-matteson/cs386/issues/47 
 
@@ -58,7 +58,7 @@ Approved by: Jered Angous
 
 ![expense tracker page](requirement4.png)
 
-Requirement: Add a dropdown to select different time frames such as "weekly", "biweekly", "monthly", "yearly" for income and expenses.
+Requirement: As a user, I have costs that draft at different time frames during the year, so I want to be able to track the annual cost of all my expenses.
 
 Issue: https://github.com/brenden-matteson/cs386/issues/48   
 
@@ -70,6 +70,18 @@ Approved by: Jered Angous
 
 ![expense tracker page](requirement5-1.png)
 ![expense tracker page](requirement5-2.png)
+
+Requirement: As a user, I want to be be able to contact the developers of SimpleCents, so that I can let them know if there is any problems.
+
+Issue: https://github.com/brenden-matteson/cs386/issues/35 
+
+Pull request: https://github.com/brenden-matteson/cs386/pull/57 
+
+Implemented by: Jered Angous
+
+Approved by: Brenden Matteson
+
+![contact us page](requirement6.png)
 
 ## Tests
 
