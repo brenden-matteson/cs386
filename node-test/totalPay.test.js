@@ -17,3 +17,11 @@ test("contract worker", async () => {
     const result = obj.totalPay();
     expect(result).toBe(2200);
 });
+
+test("multiple sources", async () => {
+    const hourlyIncome = new hourly(17.40, 20);
+    const salaryIncome = new salary(25000);
+    const contractIncome = new contract([100, 100, 1000, 1000]);
+    const result = hourlyIncome.totalPay() + salaryIncome.totalPay() + contractIncome.totalPay();
+    expect(result).toBe(45296);
+});

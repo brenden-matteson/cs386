@@ -1,4 +1,4 @@
-# Deliverable 5
+# Deliverable 6
 
 ## Introduction
 
@@ -6,7 +6,7 @@ The problem of poor money management affects young adults and college students; 
 
 SimpleCents is a website project meant to assist young adults and college students with their spending habits, it also intends to improve their financial literacy. We provide options for our users to visualize their spending habits in a pie chart, compared to their income, we help them visualize their debt and minimum payments necessary towards that debt. We offer information about credit scores and how credit cards work. Our website is a great opportunity for the users to expand on their knowledge and grow a healthy standard for their expenses and money habits.
 
-https://github.com/brenden-matteson/cs386 
+Link to our project: https://github.com/brenden-matteson/cs386 
 
 ## Requirements
 
@@ -46,7 +46,7 @@ Approved by: Jered Angous
 
 ![financial wellness page](requirement3.png)
 
-Requirement: Add more types of income for the expense tracker page.
+Requirement: As a user, I want to be able to be able to use multiple sources of income, so that I can find my total annual income.
 
 Issue: https://github.com/brenden-matteson/cs386/issues/47 
 
@@ -58,7 +58,7 @@ Approved by: Jered Angous
 
 ![expense tracker page](requirement4.png)
 
-Requirement: Add a dropdown to select different time frames such as "weekly", "biweekly", "monthly", "yearly" for income and expenses.
+Requirement: As a user, I have costs that draft at different time frames during the year, so I want to be able to track the annual cost of all my expenses.
 
 Issue: https://github.com/brenden-matteson/cs386/issues/48   
 
@@ -70,6 +70,18 @@ Approved by: Jered Angous
 
 ![expense tracker page](requirement5-1.png)
 ![expense tracker page](requirement5-2.png)
+
+Requirement: As a user, I want to be be able to contact the developers of SimpleCents, so that I can let them know if there is any problems.
+
+Issue: https://github.com/brenden-matteson/cs386/issues/35 
+
+Pull request: https://github.com/brenden-matteson/cs386/pull/57 
+
+Implemented by: Jered Angous
+
+Approved by: Brenden Matteson
+
+![contact us page](requirement6.png)
 
 ## Tests
 
@@ -87,15 +99,26 @@ For our salary class, the test creates a salary object populated with one value:
 
 For our contract class, the test creates a contract object populated with an array of four contract payouts: 100, 100, 1000, and 1000. It then checks that the total annual income is equal to 2200.
 
-![tests 1, 2, and 3](test1&2&3.png)
+The final test then checks to make sure when you have multiple sources of income, the total annual income is the sum of all the income sources.
+
+![tests 1, 2, 3, and 4](test1,2,3,4.png)
 
 **Test Case Example 2:**
 
-This test case checks to ensure that the calculations for our expense class is working as it should. We run 1 test that encorporates all three of our subclasses, monthly, semi-annually and annually.
+This test case checks to ensure that the calculations for our expense class is working as it should. We run 4 tests that encorporates all three of our subclasses, monthly, semi-annually and annually.
 
-This test creates three mock object arrays to simulate the HTMLCollections that is used in our expense tracker page. One for monthly expenses, another for semi-annual expenses, and another for annual expenses. The monthly expenses should be multiplied by 12, semi-annual by 2, and yearly as is. It then checks to that the total expenses is equal to 16120.
+This test creates three mock object arrays to simulate the HTMLCollections that is used in our expense tracker page. One for monthly expenses, another for semi-annual expenses, and another for annual expenses. The monthly expenses should be multiplied by 12, semi-annual by 2, and yearly as is. 
 
-![test 4](test4.png)
+The first test checks that the monthly expenses were properly handled and multipled to annual expenses.
+
+The second test checks that the semi annual expenses were properly handled and multipled to annual expenses.
+
+The third test checks that the annual expenses are properly handled.
+
+The final test then checks to that the total expenses is equal to 16120.
+
+![test 5, 6, 7](test5,6,7.png)
+![test 8](test8.png)
 
 When running the tests, it checks all test suites.
 

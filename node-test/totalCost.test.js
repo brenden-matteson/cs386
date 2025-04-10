@@ -20,6 +20,21 @@ let annualExpenses = [
     { name: "Auto Insurance:", value: 0 }
 ];
 
+test('adds monthly expenses to be 14,220', () => {
+    const monthlyObj = new monthly(monthlyExpenses);
+    expect(monthlyObj.totalAnnualExpenses).toBe(14220);
+})
+
+test('adds semi annual expenses to be 16,120', () => {
+    const semiAnnualObj = new semiAnnually(semiAnnualExpenses);
+    expect(semiAnnualObj.totalAnnualExpenses).toBe(1800);
+})
+
+test('adds annual expenses to be 16,120', () => {
+    const annualObj = new annually(annualExpenses);
+    expect(annualObj.totalAnnualExpenses).toBe(100);
+})
+
 test('adds all expenses to be 16,120', () => {
     const monthlyObj = new monthly(monthlyExpenses);
     const semiAnnualObj = new semiAnnually(semiAnnualExpenses);
