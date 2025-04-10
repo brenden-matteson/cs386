@@ -119,20 +119,11 @@ removeContractButton.addEventListener("click", function() {
 
 //This function runs after the calculate button is clicked
 $('#calculateBtn').click(function () {
-    //takes in the values input by the user
 
-    // create income object
-    let user = new income();
-
-    if(typeOfIncome.value == "hourly") {
-        user = new hourly($("#payRate").val(),$("#workHours").val());
-    }
-    else if(typeOfIncome.value == "salary") {
-        user = new salary($("#yearlySalary").val());
-    }
-    else if(typeOfIncome.value == "contract") {
-        user = new contract(contracts);
-    }
+    // get income values
+    let hourlyIncome = new hourly($("#payRate").val(),$("#workHours").val());
+    let salaryIncome = new salary($("#yearlySalary").val());
+    let contractIncome = new contract(contracts);
 
     // get monthly expenses
     let expenseObjects = document.getElementsByClassName("monthly");
@@ -150,7 +141,7 @@ $('#calculateBtn').click(function () {
     let annualExpenses = new annually(expenseObjects);
 
     //This will call the totalPay function
-    let estimatedPay = user.totalPay();
+    let estimatedPay = hourlyIncome.totalPay() + salaryIncome.totalPay() + contractIncome.totalPay();
     
     // combine all expenses
     let estimatedExpensesList = [...monthlyExpenses.expenses, ...semiAnnualExpenses.expenses, ...annualExpenses.expenses];
