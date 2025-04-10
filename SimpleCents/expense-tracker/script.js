@@ -17,8 +17,6 @@ for (i = 0; i < buttons.length; i++) {
     });
 }
 
-console.log(window.innerWidth);
-
 window.addEventListener("scroll", function() {
     let logo = document.getElementById("header-logo");
     let nav = document.getElementById("nav-button");
@@ -39,42 +37,15 @@ window.addEventListener("scroll", function() {
     }
 });
 
-//Create objects variables arrays and change as such for specificatios
-let workHours = 0;
-let payRate = 0;
-let estPay = 0;
-let newExpenses = {
-    Groceries: 0,
-    Rent: 0,
-    Util: 0,
-    Clothing: 0,
-    Entertainment: 0,
-    Food: 0
-};
-
 const ctx = document.getElementById('myChart').getContext('2d');
 
 const myChart = new Chart(ctx,{
     type: 'doughnut',
     data: {
-        labels: [
-            'Groceries',
-            'Rent',
-            'Utilities',
-            'Clothing',
-            'Entertainment',
-            'Food'
-        ],
+        labels: [],
         datasets: [{
             label: 'Expenses Dataset',
-            data: [
-                newExpenses.Groceries, 
-                newExpenses.Rent, 
-                newExpenses.Util, 
-                newExpenses.Clothing, 
-                newExpenses.Entertainment, 
-                newExpenses.Food
-            ],
+            data: [],
             backgroundColor: [
                 'rgb(54, 69, 79)',
                 'rgb(79, 99, 111)',
@@ -102,17 +73,6 @@ const myChart = new Chart(ctx,{
         }
     }
 });
-
-//function that calculates the total projected expendetures for the month
-function totalCost( newExpenses ){
-    let sumCost = 0;
-    for (let key in newExpenses) {
-        if (newExpenses.hasOwnProperty(key)) {
-            sumCost += newExpenses[key];
-        }
-    }
-    return sumCost;
-};
 
 const typeOfIncome = document.getElementById("typeOfIncome");
 
@@ -144,7 +104,6 @@ addContractButton.addEventListener("click", function() {
     if(contractPayout.value != 0) {
         contracts.push(Number(contractPayout.value));
         contractPayout.value = '';
-        console.log(contracts);
         contractsText.innerHTML = "Contracts: " + contracts.toString();
     }
 });
@@ -154,7 +113,6 @@ const removeContractButton = document.getElementById("removeContract");
 removeContractButton.addEventListener("click", function() {
     if(contracts.length != 0) {
         contracts.pop();
-        console.log(contracts);
         contractsText.innerHTML = "Contracts: " + contracts.toString();
     }
 });
@@ -163,6 +121,7 @@ removeContractButton.addEventListener("click", function() {
 $('#calculateBtn').click(function () {
     //takes in the values input by the user
 
+    // create income object
     let user = new income();
 
     if(typeOfIncome.value == "hourly") {
@@ -175,98 +134,50 @@ $('#calculateBtn').click(function () {
         user = new contract(contracts);
     }
 
-    //takes in the values input by the user
-    let expenses = {
-        Groceries: parseFloat($("#groceries").val()),
-        Rent: parseFloat($("#rent").val()),
-        Util: parseFloat($("#util").val()),
-        Clothing: parseFloat($("#clothing").val()),
-        Entertainment: parseFloat($("#entertainment").val()),
-        Food: parseFloat($("#food").val())
-    };
-    
-    newExpenses = expenses;
+    // get monthly expenses
+    let expenseObjects = document.getElementsByClassName("monthly");
+
+    let monthlyExpenses = new monthly(expenseObjects);
+
+    // get semi-annual expenses
+    expenseObjects = document.getElementsByClassName("semi-annually")
+
+    let semiAnnualExpenses = new semiAnnually(expenseObjects);
+
+    // get annual expenses
+    expenseObjects = document.getElementsByClassName("annually")
+
+    let annualExpenses = new annually(expenseObjects);
 
     //This will call the totalPay function
     let estimatedPay = user.totalPay();
-    //this will call the total Cost function and multiply it by 12 since it estimates
-    //the cost for the month this will result in estimated costs for the year
-    let estimatedExpenses = totalCost(expenses) *12;
+    
+    // combine all expenses
+    let estimatedExpensesList = [...monthlyExpenses.expenses, ...semiAnnualExpenses.expenses, ...annualExpenses.expenses];
+
+    // combine all labels
+    let expensesLabels = [...monthlyExpenses.labels, ...semiAnnualExpenses.labels, ...annualExpenses.labels];
+
+    // get total expenses
+    let estimatedExpenses = monthlyExpenses.totalAnnualExpenses + semiAnnualExpenses.totalAnnualExpenses + annualExpenses.totalAnnualExpenses;
+    
     //this is how much you should have left over after expenses
-    let remainingBalance = estimatedPay - estimatedExpenses;
+    let remainingBalance = Number((estimatedPay - estimatedExpenses).toFixed(2));
+    
     //This changes the current text in payResult
     $("#payResult").text(estimatedPay);
+    
     //This changes the current text in expenseResult
     $("#expenseResult").text(estimatedExpenses);
+    
     //This changes the current text in balanceResult
     $("#balanceResult").text(remainingBalance);
 
-    updateChart(newExpenses);
+    updateChart(expensesLabels, estimatedExpensesList);
 });
 
-function updateChart(newExpenses) {
-    myChart.data.datasets[0].data = [
-        newExpenses.Groceries,
-        newExpenses.Rent,
-        newExpenses.Util,
-        newExpenses.Clothing,
-        newExpenses.Entertainment,
-        newExpenses.Food
-    ];
-
+function updateChart(expensesLabels, estimatedExpensesList) {
+    myChart.data.labels = expensesLabels;
+    myChart.data.datasets[0].data = estimatedExpensesList;
     myChart.update(); // Refresh the chart with new data
-}
-
-class income {
-    constructor() {
-        this.totalAnnualIncome = 0;
-    }
-
-    totalPay() {
-        return this.totalAnnualIncome;
-    }
-}
-
-class hourly extends income {
-    constructor(hourlyPay, hoursPerWeek) {
-
-        if (hourlyPay == null || hoursPerWeek == null || isNaN(hourlyPay) || isNaN(hoursPerWeek) || hourlyPay == 0 || hoursPerWeek == 0) {
-            alert("No pay can be estimated");
-            return; // Exit the constructor early
-        }
-
-        super();
-        this.hourlyPay = hourlyPay;
-        this.hoursPerWeek = hoursPerWeek;
-        this.totalAnnualIncome = this.hourlyPay * this.hoursPerWeek * 52;
-    }
-}
-
-class salary extends income {
-    constructor(yearlyIncome) { 
-        if (yearlyIncome == null || isNaN(yearlyIncome) || yearlyIncome == 0) {
-            alert("No pay can be estimated");
-            return; // Exit the constructor early
-        }
-
-        super();
-        this.yearlyIncome = yearlyIncome;
-        this.weeklyIncome = this.yearlyIncome / 52;
-        this.biweeklyIncome = this.yearlyIncome / 26;
-        this.totalAnnualIncome = this.yearlyIncome;
-    }
-}
-
-class contract extends income {
-    constructor(contracts = []) {
-        if (contracts.length == 0) {
-            alert("No pay can be estimated");
-            return; // Exit the constructor early
-        }
-
-        super();
-        this.contracts = contracts;
-        this.contractPayout = this.contracts.reduce((acc, val) => acc + val, 0);
-        this.totalAnnualIncome = this.contractPayout;
-    }
 }
