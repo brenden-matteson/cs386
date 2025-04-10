@@ -46,6 +46,18 @@ Approved by: Jered Angous
 
 ![financial wellness page](requirement3.png)
 
+Requirement: Add more types of income for the expense tracker page.
+
+Issue: https://github.com/brenden-matteson/cs386/issues/47 
+
+Pull request: https://github.com/brenden-matteson/cs386/pull/64 
+
+Implemented by: Brenden Matteson
+
+Approved by: Jered Angous
+
+![expense tracker page](requirement4.png)
+
 ## Tests
 
 ## Demo
