@@ -6,6 +6,10 @@ class income {
     totalPay() {
         return Number(this.totalAnnualIncome);
     }
+
+    monthlyPay() {
+        return this.totalAnnualIncome/12;
+    }
 }
 
 class hourly extends income {
@@ -32,8 +36,6 @@ class salary extends income {
 
         super();
         this.yearlyIncome = yearlyIncome;
-        this.weeklyIncome = this.yearlyIncome / 52;
-        this.biweeklyIncome = this.yearlyIncome / 26;
         this.totalAnnualIncome = this.yearlyIncome;
     }
 }
