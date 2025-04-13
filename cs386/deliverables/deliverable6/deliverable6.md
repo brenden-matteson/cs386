@@ -95,6 +95,18 @@ Approved by: Jered Angous
 
 ![budget maker page](requirement7.png)
 
+Requirement: As a college student, I want to see how much money I should save each month, so that I will be able to put a down payment on a house when I graduate.
+
+Issue: https://github.com/brenden-matteson/cs386/issues/17 
+
+Pull request: https://github.com/brenden-matteson/cs386/pull/71 
+
+Implemented by: Brenden Matteson
+
+Approved by: Jered Angous
+
+![budget maker page](requirement8.png)
+
 ## Tests
 
 The testing framework that we used is jest, which is a JavaScript Testing Framework that uses node.js. The node_modules are hosted locally because theyre the same no matter the installation, so we dont have the node_modules in our GitHub repository.
