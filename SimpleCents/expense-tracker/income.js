@@ -7,6 +7,31 @@ class income {
         return Number(this.totalAnnualIncome);
     }
 
+    takeHomePay() {
+        let totalIncome = this.totalPay();
+
+        if(totalIncome <= 11600)
+        {
+            return totalIncome*0.90;
+        }
+        else if(totalIncome > 11600 && totalIncome <= 47150)
+        {
+            return totalIncome*0.88;
+        }
+        else if(totalIncome > 47150 && totalIncome <= 100525)
+        {
+            return totalIncome*0.78;
+        }
+        else if(totalIncome > 100525 && totalIncome <= 191950)
+        {
+            return totalIncome*0.76;
+        }
+        else if(totalIncome > 191950 && totalIncome <= 243725)
+        {
+            return totalIncome*0.68;
+        }
+    }
+
     monthlyPay() {
         return Number((Number(this.totalAnnualIncome)/12).toFixed(2));
     }

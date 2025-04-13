@@ -83,6 +83,18 @@ Approved by: Brenden Matteson
 
 ![contact us page](requirement6.png)
 
+Requirement: As a user, I want to be able to create a simple budget, so that I can know how much money I need to save each month.
+
+Issue: https://github.com/brenden-matteson/cs386/issues/32 
+
+Pull request: https://github.com/brenden-matteson/cs386/pull/66 
+
+Implemented by: Tyson Charles
+
+Approved by: Jered Angous
+
+![budget maker page](requirement7.png)
+
 ## Tests
 
 The testing framework that we used is jest, which is a JavaScript Testing Framework that uses node.js. The node_modules are hosted locally because theyre the same no matter the installation, so we dont have the node_modules in our GitHub repository.
@@ -90,6 +102,8 @@ The testing framework that we used is jest, which is a JavaScript Testing Framew
 Link to tests folder: https://github.com/brenden-matteson/cs386/tree/main/node-test
 
 **Test Case Example 1:**
+
+Link to class: https://github.com/brenden-matteson/cs386/blob/main/SimpleCents/expense-tracker/income.js
 
 This test case checks to ensure that the calculations for our income class is working as it should. We run three tests, one for each type of income that we use, hourly, salary, and contract.
 
@@ -104,6 +118,8 @@ The final test then checks to make sure when you have multiple sources of income
 ![tests 1, 2, 3, and 4](test1,2,3,4.png)
 
 **Test Case Example 2:**
+
+Link to class: https://github.com/brenden-matteson/cs386/blob/main/SimpleCents/expense-tracker/expense.js
 
 This test case checks to ensure that the calculations for our expense class is working as it should. We run 4 tests that encorporates all three of our subclasses, monthly, semi-annually and annually.
 
@@ -128,14 +144,60 @@ When running the tests, it checks all test suites.
 
 ## Demo
 
+we dont have a demo yet!
+
 ## Code Quality
 
 Before implementation 1, we created a “requirements” document in our files directory which contained the rules that we would be using for our implementation including webpage layout, naming conventions, css formatting, and javascript formatting. Most of these requirements are relatively standard for most web development, but we wanted to make sure we were all working with the same rules so that our code looks cohesive. 
 
-Here’s a link to our requirements document in our GitHub repository:
+### HTML
 
-https://github.com/brenden-matteson/cs386/blob/main/SimpleCents/files/requirements.md
+**Webpage Layout**
+
+Use "head" at the top of the document for meta data.
+
+Use "header" to contain the header.
+
+Use "body" to contain the main part of the webpage
+
+* Use "section" to identify sections inside the body of the webpage.
+
+* Use "containers" to identify different sub-sections of each section.
+
+* Use "objects" relating to those containers to identify what content is going in each container.
+
+Use "footer" to contain the footer.
+
+All styles and scripts should be contained in their respective reference files. 
+
+**Naming Conventions**
+
+Use the format "name_of_section" for sections
+
+Use the format "name_of_section"-container for container elements
+
+Use the format "name_of_section"-object for objects in containers
+
+Use the same design language for naming other elements that may not fit in these categories.
+
+**Header and Footer**
+
+There will be a header and footer for every page that should be the same, to keep this continuity, they should use the same stylesheet, referenced as "header-styles.css" and "footer-styles.css" respectively. The implementation of both the header and the footer should be the same accross all contained webpages.
+
+### CSS
+
+**CSS Formatting**
+
+The styles used for each class or id of element should be in the CSS file in the order that they are used in the HTML file.
+
+There should be media query's at the end of the file to properly scale elements from desktop to mobile screen sizes. 
+
+* We should agree on what pixel sizes imply a change in the scale.
+
+### JS
+
+The elements referenced should be easier to deal with because of our naming conventions, and should keep the same design language if creating new variables for exporting.
 
 ## Lessons Learned
 
-During this second release our team learned a lot. We found the efficiency of working together is a lot better than working alone. We also learned that it is important to start working on deliverables way ahead of time to allow for mistakes as well as to allow for the best possible work. Sending our work to be looked over was extremely useful and important to our success. If we were to continue developing the project there is not much we would change, we worked pretty efficiently together.
+During this second release our team learned a lot. We found the efficiency of working together is a lot better than working alone. We also learned that it is important to start working on deliverables way ahead of time to allow for mistakes as well as to allow for the best possible work. Sending our work to be looked over was extremely useful and important to our success. What we learned from developing this project is that creating this website led to an improvement of our overall coding skills as well as tested our abilities to come up with solutions to complex problems. We also learned some new features of VSCode that were previously not on our radars. If we were to continue developing the project we would change how we delegated tasks to allow for further contribution from all members.

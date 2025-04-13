@@ -141,7 +141,10 @@ $('#calculateBtn').click(function () {
     let annualExpenses = new annually(expenseObjects);
 
     //This will call the totalPay function
-    let estimatedPay = hourlyIncome.totalPay() + salaryIncome.totalPay() + contractIncome.totalPay();
+
+    let totalAnnualIncome = hourlyIncome.totalPay() + salaryIncome.totalPay() + contractIncome.totalPay();
+
+    let estimatedPay = hourlyIncome.takeHomePay() + salaryIncome.takeHomePay() + contractIncome.takeHomePay();
     
     // combine all expenses
     let estimatedExpensesList = [...monthlyExpenses.expenses, ...semiAnnualExpenses.expenses, ...annualExpenses.expenses];
@@ -154,6 +157,9 @@ $('#calculateBtn').click(function () {
     
     //this is how much you should have left over after expenses
     let remainingBalance = Number((estimatedPay - estimatedExpenses).toFixed(2));
+
+    //This changes the current text in totalIncomeResult
+    $("#totalIncomeResult").text(totalAnnualIncome);
     
     //This changes the current text in payResult
     $("#payResult").text(estimatedPay);
