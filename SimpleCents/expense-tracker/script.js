@@ -176,5 +176,6 @@ $('#calculateBtn').click(function () {
 function updateChart(expensesLabels, estimatedExpensesList) {
     myChart.data.labels = expensesLabels;
     myChart.data.datasets[0].data = estimatedExpensesList;
+    document.getElementById("myChart").style.display = "block";
     myChart.update(); // Refresh the chart with new data
 }
