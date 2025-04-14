@@ -30,7 +30,7 @@ h2 {
     transition: 0.5s;
 }
 
-.income-container input, select {
+.income-container input, .income-container select {
     padding: 15px;
     width: 100%;
     box-sizing: border-box;
@@ -61,7 +61,7 @@ h2 {
     margin-top: 10px;
 }
 
-.contractSection input, button {
+.contractSection input, .contractSection button {
     margin-top: 10px;
 }
 
@@ -99,7 +99,7 @@ h2 {
     transition: 0.5s;
 }
 
-.expense-container input, button {
+.expense-container input, .expense-container button {
     padding: 15px;
     width: 100%;
     box-sizing: border-box;
@@ -107,7 +107,7 @@ h2 {
     border: 1px solid #ccc;
 }
 
-.expense-object input, button {
+.expense-object input, .expense-object button {
     margin-top: 10px;
 }
 
