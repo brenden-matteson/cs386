@@ -7,6 +7,31 @@ class income {
         return Number(this.totalAnnualIncome);
     }
 
+    takeHomePay() {
+        let totalIncome = this.totalPay();
+
+        if(totalIncome <= 11600)
+        {
+            return totalIncome*0.90;
+        }
+        else if(totalIncome > 11600 && totalIncome <= 47150)
+        {
+            return totalIncome*0.88;
+        }
+        else if(totalIncome > 47150 && totalIncome <= 100525)
+        {
+            return totalIncome*0.78;
+        }
+        else if(totalIncome > 100525 && totalIncome <= 191950)
+        {
+            return totalIncome*0.76;
+        }
+        else if(totalIncome > 191950 && totalIncome <= 243725)
+        {
+            return totalIncome*0.68;
+        }
+    }
+
     monthlyPay() {
         return Number((Number(this.totalAnnualIncome)/12).toFixed(2));
     }
@@ -57,7 +82,11 @@ class expense {
     }
 
     totalCost() {
-        return this.totalAnnualExpenses;
+        return Number(this.totalAnnualExpenses);
+    }
+
+    monthlyCost() {
+        return Number(Number(this.totalAnnualExpenses)/12);
     }
 }
 
@@ -73,7 +102,7 @@ class monthly extends expense {
         }
 
         for (let i = 0; i < expenseList.length; i++) {
-            if(parseFloat(expenseList[i].value) != 0) {
+            if((parseFloat(expenseList[i].value) != 0) && (parseFloat(expenseList[i].value.length) != 0)) {
                 labels.push(expenseList[i].name);
                 expenses.push(parseFloat(expenseList[i].value)*12);
                 costSum += (parseFloat(expenseList[i].value)*12);
@@ -99,7 +128,7 @@ class semiAnnually extends expense {
         }
 
         for (let i = 0; i < expenseList.length; i++) {
-            if(parseFloat(expenseList[i].value) != 0) {
+            if((parseFloat(expenseList[i].value) != 0) && (parseFloat(expenseList[i].value.length) != 0)) {
                 labels.push(expenseList[i].name);
                 expenses.push(parseFloat(expenseList[i].value)*2);
                 costSum += (parseFloat(expenseList[i].value)*2);
@@ -125,7 +154,7 @@ class annually extends expense {
         }
 
         for (let i = 0; i < expenseList.length; i++) {
-            if(parseFloat(expenseList[i].value) != 0) {
+            if((parseFloat(expenseList[i].value) != 0) && (parseFloat(expenseList[i].value.length) != 0)) {
                 labels.push(expenseList[i].name);
                 expenses.push(parseFloat(expenseList[i].value));
                 costSum += (parseFloat(expenseList[i].value));
