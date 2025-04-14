@@ -22,11 +22,11 @@ Approved by: Jered Angous
 
 ![financial wellness page](requirement1.png)
 
-Requirement: As a user I would like to see a neat color gradient for the chart developed that fits in with the website.
+Requirement: As a user I would like to see a neat color gradient for the chart developed that fits in with the website so that it all comes together nicely.
 
 Issue: https://github.com/brenden-matteson/cs386/issues/58 
 
-Pull request: https://github.com/brenden-matteson/cs386/pull/60
+Pull request: https://github.com/brenden-matteson/cs386/pull/67
 
 Implemented by: Makaela Crookes
 
@@ -156,7 +156,7 @@ When running the tests, it checks all test suites.
 
 ## Demo
 
-we dont have a demo yet!
+Demo Video: https://youtu.be/Pew8I06R6-M
 
 ## Code Quality
 
