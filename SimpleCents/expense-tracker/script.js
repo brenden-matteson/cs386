@@ -17,8 +17,6 @@ for (i = 0; i < buttons.length; i++) {
     });
 }
 
-console.log(window.innerWidth);
-
 window.addEventListener("scroll", function() {
     let logo = document.getElementById("header-logo");
     let nav = document.getElementById("nav-button");
@@ -39,49 +37,22 @@ window.addEventListener("scroll", function() {
     }
 });
 
-//Create objects variables arrays and change as such for specificatios
-let workHours = 0;
-let payRate = 0;
-let estPay = 0;
-let newExpenses = {
-    Groceries: 0,
-    Rent: 0,
-    Util: 0,
-    Clothing: 0,
-    Entertainment: 0,
-    Food: 0
-};
-
 const ctx = document.getElementById('myChart').getContext('2d');
 
 const myChart = new Chart(ctx,{
     type: 'doughnut',
     data: {
-        labels: [
-            'Groceries',
-            'Rent',
-            'Utilities',
-            'Clothing',
-            'Entertainment',
-            'Food'
-        ],
+        labels: [],
         datasets: [{
             label: 'Expenses Dataset',
-            data: [
-                newExpenses.Groceries, 
-                newExpenses.Rent, 
-                newExpenses.Util, 
-                newExpenses.Clothing, 
-                newExpenses.Entertainment, 
-                newExpenses.Food
-            ],
+            data: [],
             backgroundColor: [
-                'rgb(54, 69, 79)',
-                'rgb(79, 99, 111)',
-                'rgb(105, 130, 145)',
-                'rgb(132, 163, 181)',
-                'rrgb(160, 197, 217)',
-                'rgb(189, 232, 255)'
+                'rgb(169, 184, 138)',
+                'rgb(76, 107, 60)',
+                'rgb(136, 176, 75)',
+                'rgb(127, 155, 125)',
+                'rgb(76, 92, 67)',
+                'rgb(165, 180, 68)'
             ],
             hoverOffset: 4
         }]
@@ -103,76 +74,107 @@ const myChart = new Chart(ctx,{
     }
 });
 
+const typeOfIncome = document.getElementById("typeOfIncome");
 
-//Basic function that calculates total projected pay for the year
-function totalPay( workHours, payRate){
-    if( workHours <= 0 || payRate <= 0 ){
-        alert("No pay can be estimated");
-        return;
-    }
-    else{
-        estPay = workHours * payRate * 52;
-        return estPay;
-    }
+typeOfIncome.addEventListener("change", function() {
+    
+    $('.hourlySection').css('display','none');
+    $('.salarySection').css('display','none');
+    $('.contractSection').css('display','none');
 
-}
-
-//function that calculates the total projected expendetures for the month
-function totalCost( newExpenses ){
-    let sumCost = 0;
-    for (let key in newExpenses) {
-        if (newExpenses.hasOwnProperty(key)) {
-            sumCost += newExpenses[key];
-        }
+    if(typeOfIncome.value == "hourly") {
+        $('.hourlySection').css('display', 'block');
     }
-    return sumCost;
-};
+    else if(typeOfIncome.value == "salary") {
+        $('.salarySection').css('display','block');
+    }
+    else if(typeOfIncome.value == "contract") {
+        $('.contractSection').css('display','block');
+    }
+});
+
+const addContractButton = document.getElementById("addContract");
+
+let contracts = [];
+
+addContractButton.addEventListener("click", function() {
+    let contractPayout = document.getElementById("contractPayout");
+    let contractsText = document.getElementById("contractsText");
+
+    if(contractPayout.value != 0) {
+        contracts.push(Number(contractPayout.value));
+        contractPayout.value = '';
+        contractsText.innerHTML = "Contracts: " + contracts.toString();
+    }
+});
+
+const removeContractButton = document.getElementById("removeContract");
+
+removeContractButton.addEventListener("click", function() {
+    if(contracts.length != 0) {
+        contracts.pop();
+        contractsText.innerHTML = "Contracts: " + contracts.toString();
+    }
+});
 
 //This function runs after the calculate button is clicked
 $('#calculateBtn').click(function () {
-    //takes in the values input by the user
-    let workHours = $("#workHours").val();
-    let payRate = $("#payRate").val();
-    //takes in the values input by the user
-    let expenses = {
-        Groceries: parseFloat($("#groceries").val()),
-        Rent: parseFloat($("#rent").val()),
-        Util: parseFloat($("#util").val()),
-        Clothing: parseFloat($("#clothing").val()),
-        Entertainment: parseFloat($("#entertainment").val()),
-        Food: parseFloat($("#food").val())
-    };
-    
-    newExpenses = expenses;
+
+    // get income values
+    let hourlyIncome = new hourly($("#payRate").val(),$("#workHours").val());
+    let salaryIncome = new salary($("#yearlySalary").val());
+    let contractIncome = new contract(contracts);
+
+    // get monthly expenses
+    let expenseObjects = document.getElementsByClassName("monthly");
+
+    let monthlyExpenses = new monthly(expenseObjects);
+
+    // get semi-annual expenses
+    expenseObjects = document.getElementsByClassName("semi-annually")
+
+    let semiAnnualExpenses = new semiAnnually(expenseObjects);
+
+    // get annual expenses
+    expenseObjects = document.getElementsByClassName("annually")
+
+    let annualExpenses = new annually(expenseObjects);
 
     //This will call the totalPay function
-    let estimatedPay = totalPay(workHours, payRate);
-    //this will call the total Cost function and multiply it by 12 since it estimates
-    //the cost for the month this will result in estimated costs for the year
-    let estimatedExpenses = totalCost(expenses) *12;
+
+    let totalAnnualIncome = hourlyIncome.totalPay() + salaryIncome.totalPay() + contractIncome.totalPay();
+
+    let estimatedPay = hourlyIncome.takeHomePay() + salaryIncome.takeHomePay() + contractIncome.takeHomePay();
+    
+    // combine all expenses
+    let estimatedExpensesList = [...monthlyExpenses.expenses, ...semiAnnualExpenses.expenses, ...annualExpenses.expenses];
+
+    // combine all labels
+    let expensesLabels = [...monthlyExpenses.labels, ...semiAnnualExpenses.labels, ...annualExpenses.labels];
+
+    // get total expenses
+    let estimatedExpenses = monthlyExpenses.totalAnnualExpenses + semiAnnualExpenses.totalAnnualExpenses + annualExpenses.totalAnnualExpenses;
+    
     //this is how much you should have left over after expenses
-    let remainingBalance = estimatedPay - estimatedExpenses;
+    let remainingBalance = Number((estimatedPay - estimatedExpenses).toFixed(2));
+
+    //This changes the current text in totalIncomeResult
+    $("#totalIncomeResult").text(totalAnnualIncome);
+    
     //This changes the current text in payResult
     $("#payResult").text(estimatedPay);
+    
     //This changes the current text in expenseResult
     $("#expenseResult").text(estimatedExpenses);
+    
     //This changes the current text in balanceResult
     $("#balanceResult").text(remainingBalance);
 
-    updateChart(newExpenses);
+    updateChart(expensesLabels, estimatedExpensesList);
 });
 
-function updateChart(newExpenses) {
-    myChart.data.datasets[0].data = [
-        newExpenses.Groceries,
-        newExpenses.Rent,
-        newExpenses.Util,
-        newExpenses.Clothing,
-        newExpenses.Entertainment,
-        newExpenses.Food
-    ];
-
+function updateChart(expensesLabels, estimatedExpensesList) {
+    myChart.data.labels = expensesLabels;
+    myChart.data.datasets[0].data = estimatedExpensesList;
     myChart.update(); // Refresh the chart with new data
 }
-
-
