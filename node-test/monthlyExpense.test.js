@@ -23,12 +23,12 @@ let mockMonthlyTwo = [
 ];
 
 test('adds monthly expenses to be 14,220 with valid input', () => {
-    const monthlyObj = new monthly(mockMonthlyOne);
-    expect(monthlyObj.totalAnnualExpenses).toBe(14220);
+    const mock = new monthly(mockMonthlyOne);
+    expect(mock.totalAnnualExpenses).toBe(14220);
 })
 
 test('adds monthly expenses to be 11820 with invalid input', () => {
-    const monthlyObj = new monthly(mockMonthlyTwo);
-    expect(monthlyObj.totalAnnualExpenses).toBe(11820);
+    const mock = new monthly(mockMonthlyTwo);
+    expect(mock.totalAnnualExpenses).toBe(11820);
 })
 

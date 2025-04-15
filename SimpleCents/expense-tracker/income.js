@@ -51,6 +51,8 @@ class hourly extends income {
         }
         catch(err) {
             this.totalAnnualIncome = 0;
+            this.hourlyPay = 0;
+            this.hoursPerWeek = 0;
             return;
         }
         
