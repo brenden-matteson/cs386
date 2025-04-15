@@ -1,4 +1,4 @@
-const { hourly, salary, contract } = require('../SimpleCents/expense-tracker/expenseTracker.js');
+const { hourly, salary, contract } = require('../SimpleCents/expense-tracker/income.js');
 
 test("hourly worker", async () => {
     const obj = new hourly(17.40, 20);
