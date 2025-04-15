@@ -101,7 +101,7 @@ addContractButton.addEventListener("click", function() {
     let contractPayout = document.getElementById("contractPayout");
     let contractsText = document.getElementById("contractsText");
 
-    if(contractPayout.value != 0) {
+    if(contractPayout.value > 0) {
         contracts.push(Number(contractPayout.value));
         contractPayout.value = '';
         contractsText.innerHTML = "Contracts: " + contracts.toString();

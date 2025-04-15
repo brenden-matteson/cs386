@@ -39,13 +39,21 @@ class income {
 
 class hourly extends income {
     constructor(hourlyPay, hoursPerWeek) {
-
-        if (hourlyPay == null || hoursPerWeek == null || isNaN(hourlyPay) || isNaN(hoursPerWeek)) {
-            alert("No pay can be estimated");
-            return; // Exit the constructor early
-        }
-
         super();
+
+        try {
+            if (hourlyPay == null || hoursPerWeek == null) {
+                throw "empty";
+            }
+            if (isNaN(hourlyPay) || isNaN(hoursPerWeek)) {
+                throw "not a number";
+            }
+        }
+        catch(err) {
+            this.totalAnnualIncome = 0;
+            return;
+        }
+        
         this.hourlyPay = hourlyPay;
         this.hoursPerWeek = hoursPerWeek;
         this.totalAnnualIncome = Number((this.hourlyPay * this.hoursPerWeek * 52).toFixed(2));
@@ -54,12 +62,23 @@ class hourly extends income {
 
 class salary extends income {
     constructor(yearlyIncome) { 
-        if (yearlyIncome == null || isNaN(yearlyIncome)) {
-            alert("No pay can be estimated");
-            return; // Exit the constructor early
+        super();
+
+        try { 
+            if (yearlyIncome == null) {
+                throw "empty";
+            }
+
+            if (isNaN(yearlyIncome)) {
+                throw "not a number";
+            }
+        }
+        catch(err)
+        {
+            this.totalAnnualIncome = 0;
+            return;
         }
 
-        super();
         this.yearlyIncome = yearlyIncome;
         this.totalAnnualIncome = this.yearlyIncome;
     }
@@ -72,4 +91,8 @@ class contract extends income {
         this.contractPayout = this.contracts.reduce((acc, val) => acc + val, 0);
         this.totalAnnualIncome = this.contractPayout;
     }
+}
+
+if (typeof module === 'object') {
+    module.exports = { hourly, salary, contract, income };
 }
