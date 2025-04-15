@@ -36,7 +36,7 @@ window.addEventListener("scroll", function() {
         }
     }
 });
-
+/*
 const ctx = document.getElementById('myChart').getContext('2d');
 
 const myChart = new Chart(ctx,{
@@ -73,7 +73,7 @@ const myChart = new Chart(ctx,{
         }
     }
 });
-
+*/
 const typeOfIncome = document.getElementById("typeOfIncome");
 
 typeOfIncome.addEventListener("change", function() {
@@ -173,9 +173,11 @@ $('#calculateBtn').click(function () {
     updateChart(expensesLabels, estimatedExpensesList);
 });
 
+/*
 function updateChart(expensesLabels, estimatedExpensesList) {
     myChart.data.labels = expensesLabels;
     myChart.data.datasets[0].data = estimatedExpensesList;
     document.getElementById("myChart").style.display = "block";
     myChart.update(); // Refresh the chart with new data
 }
+*/
