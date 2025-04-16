@@ -79,6 +79,16 @@ Link to test: https://github.com/brenden-matteson/cs386/tree/main/acceptance-tes
 
 ![Acceptance test 3](acceptance-test3.png)
 
+**Test Case Example 4:**
+
+The fourth test case is one acceptance test on the financial wellness page of SimpleCents.
+
+The test uses nightmore to navigate to the financial wellness page, then it mimics the user clicking one of the navigation links on the side bar navigation. Jest then checks to make sure that the url that the link navigates to is the correct section.
+
+Link to test: https://github.com/brenden-matteson/cs386/tree/main/acceptance-test/financialWellness.test.js
+
+![Acceptance test 4](acceptance-test4.png)
+
 **Results:**
 
 ![Results](acceptance-results.png)
