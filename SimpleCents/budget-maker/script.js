@@ -180,6 +180,8 @@ function calculate() {
     monthlyIncomeSummary.textContent = `Monthly Income: $${income.toFixed(2)}`
     takeHomeSummary.textContent = `Take Home Pay: $${takeHome.toFixed(2)}`;
     remainingSummary.textContent = `Total Expenses: $${expenses.toFixed(2)} | Remaining: $${remaining.toFixed(2)}`;
+
+    calculateSavings();
 }
 
 const savingsGoal = document.getElementById("goal");
@@ -189,31 +191,34 @@ savingsGoal.addEventListener('input', calculateSavings);
 function calculateSavings() {
     const savingsSummary = document.getElementById("savingsSummary")
     const percentageRemaining = remainingBalance(takeHomePay(), totalExpenses())/totalIncome();
-    if(percentageRemaining >= 0.20 && percentageRemaining < 0.40)
+    if(savingsGoal.value > 0)
     {
-        let savingsAmount = 0.20*totalIncome();
-        let remaining = remainingBalance(takeHomePay(), totalExpenses()) - savingsAmount;
-        let savingsTime = savingsGoal.value/savingsAmount;
-        savingsSummary.textContent = `Using the traditional 20% savings rule, you will need to save $${savingsAmount.toFixed(2)} each month for ${Math.ceil(savingsTime)} months to reach your goal. The remaining $${remaining.toFixed(2)} should be used for your entertainment.`;
-    }
-    else if(percentageRemaining < 0.20 && percentageRemaining > 0.10)
-    {
-        let savingsAmount = 0.10*totalIncome();
-        let remaining = remainingBalance(takeHomePay(), totalExpenses()) - savingsAmount;
-        let savingsTime = savingsGoal.value/savingsAmount;
-        savingsSummary.textContent = `Using a conservative 10% savings rule, you will need to save $${savingsAmount.toFixed(2)} each month for ${Math.ceil(savingsTime)} months to reach your goal. The remaining $${remaining.toFixed(2)} should be used for your entertainment.`;
-    }
-    else if(percentageRemaining >= 0.40 )
-    {
-        let savingsAmount = 0.40*totalIncome();
-        let remaining = remainingBalance(takeHomePay(), totalExpenses()) - savingsAmount;
-        let savingsTime = savingsGoal.value/savingsAmount;
-        savingsSummary.textContent = `Using a whopping 40% savings rule, you can save $${savingsAmount.toFixed(2)} each month for ${Math.ceil(savingsTime)} months to reach your goal. The remaining $${remaining.toFixed(2)} should be used for your entertainment.`;
-    }
-    else
-    {
-        let remaining = remainingBalance(takeHomePay(), totalExpenses());
-        savingsSummary.textContent = `You are using essentially your entire budget already, you should try to find another source of income, and in the meantime, use the remaining $${remaining.toFixed(2)} for your entertainment.`;
+        if(percentageRemaining >= 0.20 && percentageRemaining < 0.40)
+            {
+                let savingsAmount = 0.20*totalIncome();
+                let remaining = remainingBalance(takeHomePay(), totalExpenses()) - savingsAmount;
+                let savingsTime = savingsGoal.value/savingsAmount;
+                savingsSummary.textContent = `Using the traditional 20% savings rule, you will need to save $${savingsAmount.toFixed(2)} each month for ${Math.ceil(savingsTime)} months to reach your goal. The remaining $${remaining.toFixed(2)} should be used for your entertainment.`;
+            }
+            else if(percentageRemaining < 0.20 && percentageRemaining > 0.10)
+            {
+                let savingsAmount = 0.10*totalIncome();
+                let remaining = remainingBalance(takeHomePay(), totalExpenses()) - savingsAmount;
+                let savingsTime = savingsGoal.value/savingsAmount;
+                savingsSummary.textContent = `Using a conservative 10% savings rule, you will need to save $${savingsAmount.toFixed(2)} each month for ${Math.ceil(savingsTime)} months to reach your goal. The remaining $${remaining.toFixed(2)} should be used for your entertainment.`;
+            }
+            else if(percentageRemaining >= 0.40 )
+            {
+                let savingsAmount = 0.40*totalIncome();
+                let remaining = remainingBalance(takeHomePay(), totalExpenses()) - savingsAmount;
+                let savingsTime = savingsGoal.value/savingsAmount;
+                savingsSummary.textContent = `Using a whopping 40% savings rule, you can save $${savingsAmount.toFixed(2)} each month for ${Math.ceil(savingsTime)} months to reach your goal. The remaining $${remaining.toFixed(2)} should be used for your entertainment.`;
+            }
+            else
+            {
+                let remaining = remainingBalance(takeHomePay(), totalExpenses());
+                savingsSummary.textContent = `You are using essentially your entire budget already, you should try to find another source of income, and in the meantime, use the remaining $${remaining.toFixed(2)} for your entertainment.`;
+            }
     }
 
     console.log(remainingBalance(takeHomePay(), totalExpenses())/totalIncome());
