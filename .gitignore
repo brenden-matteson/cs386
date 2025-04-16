@@ -1,1 +1,3 @@
-/node-test/node_modules/
+/unit-test/node_modules/
+
+/acceptance-test/node_modules/

@@ -26,7 +26,7 @@ class monthly extends expense {
         }
 
         for (let i = 0; i < expenseList.length; i++) {
-            if((parseFloat(expenseList[i].value) != 0) && (parseFloat(expenseList[i].value.length) != 0)) {
+            if((parseFloat(expenseList[i].value) > 0) && (parseFloat(expenseList[i].value.length) != 0)) {
                 labels.push(expenseList[i].name);
                 expenses.push(parseFloat(expenseList[i].value)*12);
                 costSum += (parseFloat(expenseList[i].value)*12);
@@ -52,7 +52,7 @@ class semiAnnually extends expense {
         }
 
         for (let i = 0; i < expenseList.length; i++) {
-            if((parseFloat(expenseList[i].value) != 0) && (parseFloat(expenseList[i].value.length) != 0)) {
+            if((parseFloat(expenseList[i].value) > 0) && (parseFloat(expenseList[i].value.length) != 0)) {
                 labels.push(expenseList[i].name);
                 expenses.push(parseFloat(expenseList[i].value)*2);
                 costSum += (parseFloat(expenseList[i].value)*2);
@@ -78,7 +78,7 @@ class annually extends expense {
         }
 
         for (let i = 0; i < expenseList.length; i++) {
-            if((parseFloat(expenseList[i].value) != 0) && (parseFloat(expenseList[i].value.length) != 0)) {
+            if((parseFloat(expenseList[i].value) > 0) && (parseFloat(expenseList[i].value.length) != 0)) {
                 labels.push(expenseList[i].name);
                 expenses.push(parseFloat(expenseList[i].value));
                 costSum += (parseFloat(expenseList[i].value));
@@ -90,4 +90,8 @@ class annually extends expense {
         this.expenses = expenses;
         this.totalAnnualExpenses = costSum;
     }
+}
+
+if (typeof module === 'object') {
+    module.exports = { expense, monthly, semiAnnually, annually };
 }

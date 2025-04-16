@@ -65,49 +65,50 @@
             </select>
             <div class="hourlySection">
                 <label for="workHours">Work Hours Per Week:</label>
-                <input type="number" value="0" id="workHours" >
+                <input type="number" value="" placeholder="0" id="workHours" >
                 <label for="payRate">Hourly Pay Rate:</label>
-                <input type="number" value="0" id="payRate" >
+                <input type="number" value="" placeholder="0" id="payRate" >
             </div>
             <div class="salarySection">
                 <label for="yearlySalary">Yearly Salary:</label>
-                <input type="number" value="0" id="yearlySalary" >
+                <input type="number" value="" placeholder="0" id="yearlySalary" >
             </div>
             <div class="contractSection">
                 <label for="contractPayout">Contract Payout:</label>
-                <input type="number" value="0" id="contractPayout" >
+                <input type="number" value="" placeholder="0" id="contractPayout" >
                 <input type="button" value="Add" id="addContract">
                 <div id="contractsText">Contracts: </div>
                 <input type="button" value="Remove Recent" id="removeContract">
             </div>
+            <p id="err-message"></p>
             
             <h3>Expenses (Monthly)</h3>
             <label for="groceries">Groceries:</label>
-            <input type="number" value="0" id="groceries" class="monthly" name="Groceries:">
+            <input type="number" value="" placeholder="0" id="groceries" class="monthly" name="Groceries:">
             <label for="rent">Rent/Mortgage:</label>
-            <input type="number" value="0" id="rent" class="monthly" name="Rent/Mortgage:">
+            <input type="number" value="" placeholder="0" id="rent" class="monthly" name="Rent/Mortgage:">
             <label for="util">Utilities:</label>
-            <input type="number" value="0" id="util" class="monthly" name="Utilities:">
+            <input type="number" value="" placeholder="0" id="util" class="monthly" name="Utilities:">
             <label for="subscriptionsMonthly">Subscriptions:</label>
-            <input type="number" value="0" id="subscriptionsMonthly" class="monthly" name="Subscriptions (Monthly):">
+            <input type="number" value="" placeholder="0" id="subscriptionsMonthly" class="monthly" name="Subscriptions (Monthly):">
             <label for="autoInsuranceMonthly">Auto Insurance:</label>
-            <input type="number" value="0" id="autoInsuranceMonthly" class="monthly" name="Auto Insurance:">
+            <input type="number" value="" placeholder="0" id="autoInsuranceMonthly" class="monthly" name="Auto Insurance:">
             <label for="clothing">Clothing:</label>
-            <input type="number" value="0" id="clothing" class="monthly" name="Clothing:">
+            <input type="number" value="" placeholder="0" id="clothing" class="monthly" name="Clothing:">
             <label for="entertainment">Entertainment:</label>
-            <input type="number" value="0" id="entertainment" class="monthly" name="Entertainment:">
+            <input type="number" value="" placeholder="0" id="entertainment" class="monthly" name="Entertainment:">
             <label for="food">Takeout:</label>
-            <input type="number" value="0" id="food" class="monthly" name="Takeout:">
+            <input type="number" value="" placeholder="0" id="food" class="monthly" name="Takeout:">
 
             <h3>Expenses (Semi-Annually)</h3>
             <label for="autoInsuranceSemiAnnually">Auto Insurance:</label>
-            <input type="number" value="0" id="autoInsuranceSemiAnnually" class="semi-annually" name="Auto Insurance:">
+            <input type="number" value="" placeholder="0" id="autoInsuranceSemiAnnually" class="semi-annually" name="Auto Insurance:">
 
             <h3>Expenses (Annually)</h3>
             <label for="subscriptionsAnnually">Subscriptions:</label>
-            <input type="number" value="0" id="subscriptionsAnnually" class="annually" name="Subscriptions (Annually):">
+            <input type="number" value="" placeholder="0" id="subscriptionsAnnually" class="annually" name="Subscriptions (Annually):">
             <label for="autoInsuranceAnnually">Auto Insurance:</label>
-            <input type="number" value="0" id="autoInsuranceAnnually" class="annually" name="Auto Insurance:">
+            <input type="number" value="" placeholder="0" id="autoInsuranceAnnually" class="annually" name="Auto Insurance:">
 
             <input type="submit" name="submit" id="calculateBtn" value="Calculate" required>
             
@@ -115,7 +116,7 @@
         </div>
         
         <div class="chart-container">
-            <canvas id="myChart"></canvas>
+            <canvas id="myChart" style="display: none"></canvas>
         </div>
 
         <div class="expense-container">
@@ -175,4 +176,5 @@
     </footer>
     <!-- link to javascript -->
     <script src="./script.js"></script>
+    <script src="./myChart.js"></script>
 </html>
