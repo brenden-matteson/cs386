@@ -155,3 +155,19 @@ $('#calculateBtn').click(function () {
 
     updateChart(expensesLabels, estimatedExpensesList);
 });
+
+const utilities = document.getElementsByClassName("util-category");
+
+for (i = 0; i < utilities.length; i++) {
+    utilities[i].addEventListener("input", function() {
+        const utilInput = document.getElementById("util");
+        let sum = 0;
+
+        for (i = 0; i < utilities.length; i++) {
+            sum += Number(utilities[i].value);
+        }
+
+        utilInput.value = sum;
+        utilInput.textContent = sum;
+    });
+}
