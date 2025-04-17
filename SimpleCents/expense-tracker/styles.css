@@ -85,7 +85,7 @@ h2 {
     transition: 0.5s;
 }
 
-#calculateBtn {
+#calculateBtn, #exportBtn {
     padding: 15px;
     width: 100%;
     box-sizing: border-box;
@@ -93,7 +93,7 @@ h2 {
     border: 1px solid #ccc;
 }
 
-#calculateBtn:hover {
+#calculateBtn:hover, #exportBtn:hover {
     background-color: #2A5D67;
     color: white;
     transition-duration: 0.2s;
