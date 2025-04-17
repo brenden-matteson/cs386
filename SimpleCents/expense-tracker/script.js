@@ -132,6 +132,26 @@ $('#calculateBtn').click(function () {
     
     //This changes the current text in balanceResult
     $("#balanceResult").text(remainingBalance);
+    
+    let estimatedMonthlyIncome = hourlyIncome.monthlyPay() + salaryIncome.monthlyPay() + contractIncome.monthlyPay();
+
+    let estimatedMonthlyPay = Number((estimatedPay/12).toFixed(2));
+
+    let estimatedMonthlyExpenses = monthlyExpenses.monthlyCost() + semiAnnualExpenses.monthlyCost() + annualExpenses.monthlyCost();
+
+    let remainingMonthlyBalance = Number((estimatedMonthlyPay - estimatedMonthlyExpenses).toFixed(2));
+
+    //This changes the current text in totalIncomeResult
+    $("#totalIncomeResultMonthly").text(estimatedMonthlyIncome);
+    
+    //This changes the current text in payResult
+    $("#payResultMonthly").text(estimatedMonthlyPay);
+    
+    //This changes the current text in expenseResult
+    $("#expenseResultMonthly").text(estimatedMonthlyExpenses);
+    
+    //This changes the current text in balanceResult
+    $("#balanceResultMonthly").text(remainingMonthlyBalance);
 
     updateChart(expensesLabels, estimatedExpensesList);
 });
