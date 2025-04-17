@@ -8,7 +8,7 @@ SimpleCents is a website project meant to assist young adults and college studen
 
 ## Verification
 
-The testing framework that we used is jest, which is a JavaScript Testing Framework that uses node.js. The node_modules are hosted locally because theyre the same no matter the installation, so we dont have the node_modules in our GitHub repository.
+The testing framework that we used is jest, which is a JavaScript Testing Framework that uses node.js. The node_modules are hosted locally because they are the same no matter the installation, so we do not have the node_modules in our GitHub repository.
 
 Link to automatic unit tests folder: https://github.com/brenden-matteson/cs386/tree/main/unit-test
 
