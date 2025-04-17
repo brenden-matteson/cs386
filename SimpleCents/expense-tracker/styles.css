@@ -30,6 +30,15 @@ h2 {
     border: 1px solid #ccc;
 }
 
+.expense-container li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.util-category {
+    margin-top: 10px;
+}
+
 .hourlySection {
     margin-top: 10px;
 }
