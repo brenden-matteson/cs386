@@ -1,4 +1,4 @@
-const { monthly, semiAnnually, annually } = require('../SimpleCents/expense-tracker/expenseTracker.js');
+const { monthly, semiAnnually, annually } = require('../SimpleCents/expense-tracker/expense.js');
 
 let monthlyExpenses = [
     { name: "Groceries:", value: 200 },

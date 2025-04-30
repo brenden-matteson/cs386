@@ -30,6 +30,15 @@ h2 {
     border: 1px solid #ccc;
 }
 
+.expense-container li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.util-category {
+    margin-top: 10px;
+}
+
 .hourlySection {
     margin-top: 10px;
 }
@@ -76,7 +85,7 @@ h2 {
     transition: 0.5s;
 }
 
-#calculateBtn {
+#calculateBtn, #exportBtn {
     padding: 15px;
     width: 100%;
     box-sizing: border-box;
@@ -84,7 +93,7 @@ h2 {
     border: 1px solid #ccc;
 }
 
-#calculateBtn:hover {
+#calculateBtn:hover, #exportBtn:hover {
     background-color: #2A5D67;
     color: white;
     transition-duration: 0.2s;
@@ -92,6 +101,33 @@ h2 {
 
 #myChart {
     width: 80%;
+}
+
+.results {
+    margin-top: 50px;
+    margin-bottom: 50px;   
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: F4F4F4;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1),0 2px 10px 0 rgba(0,0,0,0.08);
+    transition: 0.5s;
+    justify-content: space-around;
+}
+
+.results-container {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 50px;
+    transition: 0.5s;
+    justify-content: space-around;
+}
+
+.results-object {
+    display: flex;
+    flex-direction: column;
 }
 
 @media only screen and (max-width: 700px) {
@@ -106,5 +142,12 @@ h2 {
         margin-left: 5%;
         margin-right: 5%;
         transition: 0.5s;
+    }
+
+    .results-container {
+        margin-left: 5%;
+        margin-right: 5%;
+        transition: 0.5s;
+        flex-direction: column;
     }
 }

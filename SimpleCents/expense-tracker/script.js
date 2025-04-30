@@ -37,43 +37,6 @@ window.addEventListener("scroll", function() {
     }
 });
 
-const ctx = document.getElementById('myChart').getContext('2d');
-
-const myChart = new Chart(ctx,{
-    type: 'doughnut',
-    data: {
-        labels: [],
-        datasets: [{
-            label: 'Expenses Dataset',
-            data: [],
-            backgroundColor: [
-                'rgb(169, 184, 138)',
-                'rgb(76, 107, 60)',
-                'rgb(136, 176, 75)',
-                'rgb(127, 155, 125)',
-                'rgb(76, 92, 67)',
-                'rgb(165, 180, 68)'
-            ],
-            hoverOffset: 4
-        }]
-    },
-    options: {
-        responsive: true,
-        plugins: {
-            legend: {
-                position: 'top',
-            },
-            tooltip: {
-                callbacks: {
-                    label: function (tooltipItem) {
-                        return `${tooltipItem.label}: $${tooltipItem.raw.toFixed(2)}`;
-                    }
-                }
-            }
-        }
-    }
-});
-
 const typeOfIncome = document.getElementById("typeOfIncome");
 
 typeOfIncome.addEventListener("change", function() {
@@ -101,7 +64,7 @@ addContractButton.addEventListener("click", function() {
     let contractPayout = document.getElementById("contractPayout");
     let contractsText = document.getElementById("contractsText");
 
-    if(contractPayout.value != 0) {
+    if(contractPayout.value > 0) {
         contracts.push(Number(contractPayout.value));
         contractPayout.value = '';
         contractsText.innerHTML = "Contracts: " + contracts.toString();
@@ -159,22 +122,52 @@ $('#calculateBtn').click(function () {
     let remainingBalance = Number((estimatedPay - estimatedExpenses).toFixed(2));
 
     //This changes the current text in totalIncomeResult
-    $("#totalIncomeResult").text(totalAnnualIncome);
+    $("#totalIncomeResult").text((totalAnnualIncome).toFixed(2));
     
     //This changes the current text in payResult
-    $("#payResult").text(estimatedPay);
+    $("#payResult").text((estimatedPay).toFixed(2));
     
     //This changes the current text in expenseResult
-    $("#expenseResult").text(estimatedExpenses);
+    $("#expenseResult").text((estimatedExpenses).toFixed(2));
     
     //This changes the current text in balanceResult
-    $("#balanceResult").text(remainingBalance);
+    $("#balanceResult").text((remainingBalance).toFixed(2));
+    
+    let estimatedMonthlyIncome = hourlyIncome.monthlyPay() + salaryIncome.monthlyPay() + contractIncome.monthlyPay();
+
+    let estimatedMonthlyPay = Number((estimatedPay/12).toFixed(2));
+
+    let estimatedMonthlyExpenses = monthlyExpenses.monthlyCost() + semiAnnualExpenses.monthlyCost() + annualExpenses.monthlyCost();
+
+    let remainingMonthlyBalance = Number((estimatedMonthlyPay - estimatedMonthlyExpenses).toFixed(2));
+
+    //This changes the current text in totalIncomeResult
+    $("#totalIncomeResultMonthly").text((estimatedMonthlyIncome).toFixed(2));
+    
+    //This changes the current text in payResult
+    $("#payResultMonthly").text((estimatedMonthlyPay).toFixed(2));
+    
+    //This changes the current text in expenseResult
+    $("#expenseResultMonthly").text((estimatedMonthlyExpenses).toFixed(2));
+    
+    //This changes the current text in balanceResult
+    $("#balanceResultMonthly").text((remainingMonthlyBalance).toFixed(2));
 
     updateChart(expensesLabels, estimatedExpensesList);
 });
 
-function updateChart(expensesLabels, estimatedExpensesList) {
-    myChart.data.labels = expensesLabels;
-    myChart.data.datasets[0].data = estimatedExpensesList;
-    myChart.update(); // Refresh the chart with new data
+const utilities = document.getElementsByClassName("util-category");
+
+for (i = 0; i < utilities.length; i++) {
+    utilities[i].addEventListener("input", function() {
+        const utilInput = document.getElementById("util");
+        let sum = 0;
+
+        for (i = 0; i < utilities.length; i++) {
+            sum += Number(utilities[i].value);
+        }
+
+        utilInput.value = (Number(sum)).toFixed(2);
+        utilInput.textContent = (Number(sum)).toFixed(2);
+    });
 }

@@ -1,0 +1,49 @@
+.container {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .member {
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 220px;
+    transition: transform 0.3s;
+  }
+  
+  .member:hover {
+    transform: translateY(-5px);
+  }
+  
+  .member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .member h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #444;
+  }
+  
+  .member p {
+    font-size: 16px;
+    color: #666;
+  }

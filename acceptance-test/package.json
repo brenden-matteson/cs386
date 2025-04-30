@@ -1,0 +1,28 @@
+{
+  "name": "test",
+  "version": "1.0.1",
+  "description": "Test for SimpleCents",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brenden-matteson/cs386.git"
+  },
+  "author": "Brenden Matteson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brenden-matteson/cs386/issues"
+  },
+  "homepage": "https://github.com/brenden-matteson/cs386#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-htmltidy": "^0.2.4",
+    "jest": "^29.7.0",
+    "nightmare": "^3.0.2"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.8"
+  }
+}
