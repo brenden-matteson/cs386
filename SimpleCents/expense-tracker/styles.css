@@ -85,7 +85,7 @@ h2 {
     transition: 0.5s;
 }
 
-#calculateBtn {
+#calculateBtn, #exportBtn {
     padding: 15px;
     width: 100%;
     box-sizing: border-box;
@@ -93,7 +93,7 @@ h2 {
     border: 1px solid #ccc;
 }
 
-#calculateBtn:hover {
+#calculateBtn:hover, #exportBtn:hover {
     background-color: #2A5D67;
     color: white;
     transition-duration: 0.2s;
@@ -103,12 +103,8 @@ h2 {
     width: 80%;
 }
 
-.results-container {
-    display: flex;
-    flex-direction: row;
+.results {
     margin-top: 50px;
-    align-items: left;
-    gap: 50px;
     margin-bottom: 50px;   
     margin-left: 20%;
     margin-right: 20%;
@@ -120,10 +116,18 @@ h2 {
     justify-content: space-around;
 }
 
+.results-container {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 50px;
+    transition: 0.5s;
+    justify-content: space-around;
+}
+
 .results-object {
     display: flex;
     flex-direction: column;
-    max-width: 50%;
 }
 
 @media only screen and (max-width: 700px) {

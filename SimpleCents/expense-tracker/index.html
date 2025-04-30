@@ -138,32 +138,35 @@
             <input type="number" value="" placeholder="0" id="autoInsuranceAnnually" class="annually" name="Auto Insurance:">
 
             <input type="submit" name="submit" id="calculateBtn" value="Calculate" required>
-            <!--- This is the export button --->
-            <button type="button" onclick="exportToFile()">Export</button>
-            
+
             <!--<button id="calculateBtn">Calculate</button>-->
         </div>
         
         <div class="chart-container">
             <canvas id="myChart" style="display: none"></canvas>
         </div>
-
-        <div class="results-container">
-            <div class="results-object">
-                <h3>Results</h3>
-                <p>Estimated Total Annual Income: $<span id="totalIncomeResult">0</span></p>
-                <p>Estimated Annual Take Home Pay: $<span id="payResult">0</span></p>
-                <p>Estimated Total Annual Expenses: $<span id="expenseResult">0</span></p>
-                <p>Remaining Balance: $<span id="balanceResult">0</span></p>
+        <section class="results">
+            <div class="results-container">
+                <div class="results-object">
+                    <h3>Results</h3>
+                    <p>Estimated Total Annual Income: $<span id="totalIncomeResult">0</span></p>
+                    <p>Estimated Annual Take Home Pay: $<span id="payResult">0</span></p>
+                    <p>Estimated Total Annual Expenses: $<span id="expenseResult">0</span></p>
+                    <p>Remaining Balance: $<span id="balanceResult">0</span></p>
+                </div>
+                <div class="results-object">
+                    <h3>Results</h3>
+                    <p>Estimated Total Monthly Income: $<span id="totalIncomeResultMonthly">0</span></p>
+                    <p>Estimated Monthly Take Home Pay: $<span id="payResultMonthly">0</span></p>
+                    <p>Estimated Total Monthly Expenses: $<span id="expenseResultMonthly">0</span></p>
+                    <p>Remaining Balance: $<span id="balanceResultMonthly">0</span></p>
+                </div>
             </div>
-            <div class="results-object">
-                <h3>Results</h3>
-                <p>Estimated Total Monthly Income: $<span id="totalIncomeResultMonthly">0</span></p>
-                <p>Estimated Monthly Take Home Pay: $<span id="payResultMonthly">0</span></p>
-                <p>Estimated Total Monthly Expenses: $<span id="expenseResultMonthly">0</span></p>
-                <p>Remaining Balance: $<span id="balanceResultMonthly">0</span></p>
+            <div class="results-container">
+                <!--- This is the export button --->
+                <input type="button" id="exportBtn" onclick="exportToFile()" value="Export"></input>
             </div>
-        </div>
+        </section>
     </body>
 
     <!-- footer information -->
@@ -215,4 +218,5 @@
     <!-- link to javascript -->
     <script src="./script.js"></script>
     <script src="./myChart.js"></script>
+    <script src="./exporter.js"></script>
 </html>

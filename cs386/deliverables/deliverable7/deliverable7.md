@@ -94,3 +94,270 @@ Link to test: https://github.com/brenden-matteson/cs386/tree/main/acceptance-tes
 ![Results](acceptance-results.png)
 
 ## Validation
+
+Script: 
+
+Hello [user], I wanted to talk to you about this project we’ve been working on called SimpleCents. SimpleCents is a simple, intuitive budgeting platform that tracks spending to help young adults stay on top of their financial goals. The point of this interview is to get some feedback on our current system. I have some tasks for you and some questions to answer if you’d be willing.
+
+User Tasks:
+
+* Enter potential income
+    * Use the dropdown menu to select (whichever applicable to you)
+* Enter potential expenses (whichever applicable to you)
+    * Add any additional expenses not already listed.
+* Enter a potential savings goal.
+* Read the financial wellness page.
+
+**Interview 1:**
+
+Who was interviewed: Ava Sabo
+
+Who was the interviewee: Brenden Matteson
+
+How would you rate the website’s design and layout on a scale of 1 to 5 (1 being horrible, 5 being amazing)? 
+
+* 5
+
+How easy is it to navigate our website?
+
+* Very easy and self explanatory. Very user friendly.
+
+Was our information useful? Why or why not? 
+
+* I think this website is great for people who are very money conscious and want a structured guideline to follow to achieve their financial goals, i’m not really that person…
+
+How trustworthy do you feel the information on our website is? 
+
+* I feel like it's trustworthy. All the calculations seemed to be accurate. 
+
+Did you encounter any errors or technical issues while using the site? If so, what? 
+
+* I experienced no issues.
+
+What type of content would you like to see more of? 
+
+* Maybe making a feature to create a spending limit so you have an idea of the money you are able to spend before you run out.
+
+Which features of our website would you use the most? 
+
+* Probably the one that calculated the savings goal, it is very easy to use and could give me answers for multiple different goals so I could find out what was realistic for me.
+
+Do you think our tools are easy to use and understand? Why or why not? 
+
+* Yes! Very user friendly site and an easy approach to start budgeting and thinking about finances.
+
+How old are you?
+
+* 19
+
+Overall, how satisfied are you with your experience on our website on a scale of 1 to 5 (1 being not satisfied at all, 5 being very satisfied)?
+
+* 5
+
+Would you recommend our website to a friend or colleague?  
+
+* Yes.
+
+**Interview 2:**
+
+Who was interviewed: Aitor Campos
+
+Who was the interviewee: Makaela Crookes
+
+How would you rate the website’s design and layout on a scale of 1 to 5 (1 being horrible, 5 being amazing)? 
+
+* 4
+
+How easy is it to navigate our website?
+
+* Pretty intuitive, it's similar to other websites I’ve used before.
+
+Was our information useful? Why or why not? 
+
+* Helpful as a free and easy budgeting platform, very nice.
+
+How trustworthy do you feel the information on our website is? 
+
+* Semi-trustworthy, I’m not totally confident in its reliability.
+
+Did you encounter any errors or technical issues while using the site? If so, what? 
+
+* The entire support section sends me to the contact us page with the option to send a support ticket; this happens even if I'm just trying to see the Privacy policy or the third option in that category.
+
+What type of content would you like to see more of? 
+
+* Maybe a way to change the tax rate? Not sure if it’s set in my local area.
+
+Which features of our website would you use the most? 
+
+* Budgeting calculator.
+
+Do you think our tools are easy to use and understand? Why or why not? 
+
+* Yes, UI was really responsive and laid out well.
+
+How old are you?
+
+* 20
+
+Overall, how satisfied are you with your experience on our website on a scale of 1 to 5 (1 being not satisfied at all, 5 being very satisfied)?
+
+* 5
+
+Would you recommend our website to a friend or colleague?  
+
+* Yes, it is a very useful website.
+
+**Interview 3:**
+
+Who was interviewed: Aedan Howell
+
+Who was the interviewee: Brenden Matteson
+
+How would you rate the website’s design and layout on a scale of 1 to 5 (1 being horrible, 5 being amazing)? 
+
+* 4
+
+How easy is it to navigate our website?
+
+* Very easy and accessible.
+
+Was our information useful? Why or why not? 
+
+* The information was extremely useful and better than most financial calculators I have used in the past.
+
+How trustworthy do you feel the information on our website is? 
+
+* Very trustworthy.
+
+Did you encounter any errors or technical issues while using the site? If so, what? 
+
+* I did not encounter any errors.
+
+What type of content would you like to see more of? 
+
+* The financial calculators are very nice maybe expanding into having more of those.
+
+Which features of our website would you use the most? 
+
+* The expense tracker.
+
+Do you think our tools are easy to use and understand? Why or why not? 
+
+* Yes the tools are easy to understand, the are well documented.
+
+How old are you?
+
+* 20
+
+Overall, how satisfied are you with your experience on our website on a scale of 1 to 5 (1 being not satisfied at all, 5 being very satisfied)?
+
+* 4
+
+Would you recommend our website to a friend or colleague?  
+
+* Yes.
+
+**Interview 4:**
+
+Who was interviewed: Jeysen Angous
+
+Who was the interviewee: Jered Angous
+
+How would you rate the website’s design and layout on a scale of 1 to 5 (1 being horrible, 5 being amazing)? 
+
+* 4.5
+
+How easy is it to navigate our website?
+
+* Very easy and straightforward, dropdown menu is very handy.
+
+Was our information useful? Why or why not? 
+
+* The information was very useful and I was able to learn more about having the importance of a good credit score and how it can affect you financially.
+
+How trustworthy do you feel the information on our website is? 
+
+* Fully trustworthy.
+
+Did you encounter any errors or technical issues while using the site? If so, what? 
+
+* No.
+
+What type of content would you like to see more of? 
+
+* No comment.
+
+Which features of our website would you use the most? 
+
+* More visuals on the home page such as pictures to make it stand out.
+
+Do you think our tools are easy to use and understand? Why or why not? 
+
+* Yes very easy and straightforward. Having the export feature is a great addition.
+
+How old are you?
+
+* 23
+
+Overall, how satisfied are you with your experience on our website on a scale of 1 to 5 (1 being not satisfied at all, 5 being very satisfied)?
+
+* 5
+
+Would you recommend our website to a friend or colleague?  
+
+* Yes.
+
+**Interview 5:**
+
+Who was interviewed: Brad Pinto
+
+Who was the interviewee: Tyson Charles
+
+How would you rate the website’s design and layout on a scale of 1 to 5 (1 being horrible, 5 being amazing)? 
+
+* 4.5
+
+How easy is it to navigate our website?
+
+* It was easy to navigate, I just needed a bit of an explanation for what the section should calculate.
+
+Was our information useful? Why or why not? 
+
+* The information was useful because it gave me more insight that I never thought of and it helped me picture my expenses more clearly.
+
+How trustworthy do you feel the information on our website is? 
+
+* Very trustworthy
+
+Did you encounter any errors or technical issues while using the site? If so, what? 
+
+* Nope none that I could cause.
+
+What type of content would you like to see more of? 
+
+* No idea.
+
+Which features of our website would you use the most? 
+
+* I liked the chart creation as it helped give a visual of my expenses
+
+Do you think our tools are easy to use and understand? Why or why not? 
+
+* Yes they were easy to understand and straight to the point.
+
+How old are you?
+
+* 19
+
+Overall, how satisfied are you with your experience on our website on a scale of 1 to 5 (1 being not satisfied at all, 5 being very satisfied)?
+
+* 5
+
+Would you recommend our website to a friend or colleague?  
+
+* Yes.
+
+**Interview Reflection:**
+
+The users found that the information on our website was very helpful, it was intuitive for them to use and the budget maker is very useful. The users also found that our information may not be trustworthy, what we can do to help with that is provide reputable sources to back our information. The support section needs to be adjusted as users were unable to use select links to get help. The last complaint we received was that our users would like to see a tax selector so that they may choose which tax rate applies to them. The users found that there was not a harsh learning curve, rather that the website was easy to navigate and similar to websites they’ve used before. The users performed the tasks as expected by visiting the budget making page, testing links, and reading through our information page. Users found that the majority of these tasks returned the expected results with only our support pages lacking. The users seemed to enjoy the most, that the website was easy and intuitive to use. They also liked seeing their finances laid out in a pie chart to better visualize their spending habits. We ended up accomplishing our value proposition, we created a place for young adults and college students to go in order to better understand their finances and track them easily.

@@ -122,16 +122,16 @@ $('#calculateBtn').click(function () {
     let remainingBalance = Number((estimatedPay - estimatedExpenses).toFixed(2));
 
     //This changes the current text in totalIncomeResult
-    $("#totalIncomeResult").text(totalAnnualIncome);
+    $("#totalIncomeResult").text((totalAnnualIncome).toFixed(2));
     
     //This changes the current text in payResult
-    $("#payResult").text(estimatedPay);
+    $("#payResult").text((estimatedPay).toFixed(2));
     
     //This changes the current text in expenseResult
-    $("#expenseResult").text(estimatedExpenses);
+    $("#expenseResult").text((estimatedExpenses).toFixed(2));
     
     //This changes the current text in balanceResult
-    $("#balanceResult").text(remainingBalance);
+    $("#balanceResult").text((remainingBalance).toFixed(2));
     
     let estimatedMonthlyIncome = hourlyIncome.monthlyPay() + salaryIncome.monthlyPay() + contractIncome.monthlyPay();
 
@@ -142,16 +142,16 @@ $('#calculateBtn').click(function () {
     let remainingMonthlyBalance = Number((estimatedMonthlyPay - estimatedMonthlyExpenses).toFixed(2));
 
     //This changes the current text in totalIncomeResult
-    $("#totalIncomeResultMonthly").text(estimatedMonthlyIncome);
+    $("#totalIncomeResultMonthly").text((estimatedMonthlyIncome).toFixed(2));
     
     //This changes the current text in payResult
-    $("#payResultMonthly").text(estimatedMonthlyPay);
+    $("#payResultMonthly").text((estimatedMonthlyPay).toFixed(2));
     
     //This changes the current text in expenseResult
-    $("#expenseResultMonthly").text(estimatedMonthlyExpenses);
+    $("#expenseResultMonthly").text((estimatedMonthlyExpenses).toFixed(2));
     
     //This changes the current text in balanceResult
-    $("#balanceResultMonthly").text(remainingMonthlyBalance);
+    $("#balanceResultMonthly").text((remainingMonthlyBalance).toFixed(2));
 
     updateChart(expensesLabels, estimatedExpensesList);
 });
@@ -167,7 +167,7 @@ for (i = 0; i < utilities.length; i++) {
             sum += Number(utilities[i].value);
         }
 
-        utilInput.value = sum;
-        utilInput.textContent = sum;
+        utilInput.value = (Number(sum)).toFixed(2);
+        utilInput.textContent = (Number(sum)).toFixed(2);
     });
 }
